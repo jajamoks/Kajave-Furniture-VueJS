@@ -3,7 +3,7 @@
     <h1 class="quote-heading">GET IN TOUCH</h1>
     <div class="form">
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="contact" value="ask-question" />
+        <input type="hidden" name="contact" value="contact" />
         <md-field md-theme="kajave">
           <label>Name</label>
           <md-input name="User Name" v-model="name"></md-input>
@@ -48,6 +48,7 @@ export default {
   methods: {
     submitForm: function() {
       // this.sendEnquiry();
+      event.preventDefault();
     },
     sendEnquiry: function() {
       const data = {
