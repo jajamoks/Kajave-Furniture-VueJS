@@ -48,7 +48,6 @@ export default {
   methods: {
     submitForm: function() {
       // this.sendEnquiry();
-      event.preventDefault();
     },
     sendEnquiry: function() {
       const data = {
