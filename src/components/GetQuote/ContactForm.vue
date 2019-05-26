@@ -25,7 +25,7 @@
           <label>Textarea</label>
           <md-textarea name="Message" v-model="message"></md-textarea>
         </md-field>
-        <button @click="submitForm" type="submit" class="submit">Submit</button>
+        <button @click="submitForm" class="submit">Submit</button>
       </form>
     </div>
     <p class="copyright">Kajave Furniture | Copyright {{date}}</p>
