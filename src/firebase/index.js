@@ -7,7 +7,7 @@ import 'flamelink/storage'
 
 
 var firebaseConfig = {
-  apiKey: "AIzaSyC3kSZIclw1YrzZ1nVSrxq6myIBjQY-14A",
+  apiKey: process.env.FIRE_KEY,
   authDomain: "kajave-furniture.firebaseapp.com",
   databaseURL: "https://kajave-furniture.firebaseio.com",
   projectId: "kajave-furniture",
@@ -15,6 +15,7 @@ var firebaseConfig = {
   messagingSenderId: "390556271795",
   appId: "1:390556271795:web:a6d3f436159490e4"
 };
+
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
 
