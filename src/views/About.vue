@@ -1,0 +1,244 @@
+<template>
+  <div id="about">
+    <p class="text-1 phone-only">Solid Wooden Furniture</p>
+
+    <div class="dual-view">
+      <div class="left" sticky-container>
+        <div class="box" v-sticky :sticky-top="80" sticky-side="top">
+          <p>Our centralized production infrastructure is based at Hupri Road, adjacent to Kolhapur Airport in Maharashtra, India. This infrastructure is fully equipped with the unit wise division of execution managed by skilled and trained craftsmen. We make use of all the latest machinery and processes for the production of our furniture products. The centralization of infrastructure, process, manpower and resources helps us in standardization and to maintain the grade of the finished products at par with international standards.</p>
+          <div class="shape">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <h1 class="heading">About Us</h1>
+        <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
+        <div class="section-1">
+          <img src="../assets/about/aboutimg.webp" alt>
+          <p>
+            Envisioned and Founded by Mr. Rajesh Maruti Kajave in the year 2010 with an honest initiative to provide
+            <span
+              style="color:#9E866A"
+            >pure solid wooden, high quality finished furniture and furniture products</span> across Western Maharashtra and Pan India. Under the experienced guidance and nurturing of Mr. Rajesh Kajave and Mrs. Kavita R. Kajave, the brand "KAJAVE FURNITURE" is very ably managed by the next generation entrepreneurs Ar. Veeren R. Kajave and Ar. Mrunal V. Kajave.
+          </p>
+        </div>
+        <div class="section-2">
+          <p>
+            Kajave Furniture is well known to provide
+            <span
+              style="color:#9E866A"
+            >customized design solutions in traditional, ethnic, antique, contemporary and modern styles in solid wood.</span> With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress.
+          </p>
+        </div>
+        <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
+        <div class="carousel-wrapper">
+         
+          <Carousel/>
+           <div class="bg">
+             <p
+          class="read-text"
+        >The primary focus area is classy furniture for living room, bedroom, lounge, theme restaurants and sit-outs. We also provide made to order customized wooden furniture along with complete home décor interior solutions based on specific taste, designs, utility and requirements of our clients. We provide quality assurance and warranty for all our furniture products.</p>
+           </div>
+        </div>
+        
+        <Team/>
+      </div>
+    </div>
+
+    <FooterForm/>
+  </div>
+</template>
+
+<script>
+import Carousel from "@/components/AboutCarousel/Carousel";
+import Team from "@/components/Team/Team";
+import FooterForm from "@/components/FooterForm/FooterForm";
+export default {
+  name: "AboutView",
+  components: {
+    Carousel,
+    Team,
+    FooterForm
+  },
+  mounted(){
+    window.scrollTo(0,0);
+  }
+};
+</script>
+
+<style lang="scss" scopped>
+.text-1 {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px 0;
+  border-top: none;
+}
+
+.read-text {
+  padding: 0 16px;
+  text-align: justify;
+  color: #8a8a8a;
+  padding: 0 36px;
+  font-size: 16px;
+}
+
+#about {
+  width: 100%;
+  position: relative;
+  .heading {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 24px;
+    color: #9e866a;
+    text-transform: uppercase;
+
+     @include for-tablet-portrait-up{
+      font-size: 36px;
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .lines_dot {
+    margin-bottom: 20px;
+  }
+
+   .dual-view {
+    width: 100%;
+    @include for-tablet-portrait-up {
+      display: flex;
+    }
+
+    .left {
+      width: 25%;
+      position: relative;
+      border-right: 1px solid #8a8a8a;
+
+      @include for-phone-only {
+        display: none;
+      }
+
+      .box {
+        padding: 80px 59px 119px 70px;
+        position: relative;
+
+        p {
+          margin-top: 16px;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 27px;
+          text-align: right;
+          color: #8a8a8a;
+          position: relative;
+        }
+
+        .shape {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-top: 16px;
+          .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #9e866a;
+            margin-right: 8px;
+          }
+          .line {
+            width: 80px;
+            height: 2px;
+            background: #9e866a;
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 75%;
+
+      @include for-tablet-portrait-up {
+        padding: 0 100px;
+      }
+      @include for-phone-only {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-1 {
+    width: 100%;
+    background: #f1f1f1;
+    padding: 20px;
+
+    img {
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: justify;
+      color: #8a8a8a;
+      padding: 0 16px;
+      font-size: 16px;
+
+      @include for-tablet-portrait-up{
+        font-size: 18px;
+      }
+    }
+  }
+
+  
+
+  .section-2 {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #8a8a8a;
+      padding: 0 16px;
+       @include for-tablet-portrait-up{
+        font-size: 18px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .carousel-wrapper{
+    position: relative;
+    
+    @include for-tablet-portrait-up{
+      margin-top: 32px;
+    }
+    .bg{
+      width: 100%;
+      padding-top: 300px;
+      margin-top: -300px;
+      background: #f1f1f1;
+
+      @include for-phone-only{
+        margin-top: -190px;
+        padding-top: 190px;
+      }
+
+    }
+    p{
+     
+      padding-bottom: 20px;
+      @include for-tablet-portrait-up{
+        margin-top: 32px;
+        padding-bottom: 32px;
+        margin: 32px 80px;
+      }
+    }
+  }
+}
+</style>
