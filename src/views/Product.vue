@@ -50,14 +50,15 @@
           :class="{active:index === selectedImg}"
         >
       </div>
-      <div class="two" >
-        <!-- <div
-          id="myimage"
-          class="img"
-          v-bind:style="{ 'background-image': 'url(' + productImages[selectedImg] + ')' }"
-        ></div>-->
-        <img id="myimage" class="img" :src="productImages[selectedImg]">
-        <img v-show="zoomerShown"  id="bigImg" class="bigImg">
+      <div class="two">
+        <v-zoomer class="img">
+          <img
+           :src="productImages[selectedImg]"
+            style="object-fit: contain; width: 100%; height: 100%;"
+            id="myimage"
+          >
+        </v-zoomer>
+        <img  >
       </div>
       <div class="three">
         <h1>{{productName}}</h1>
@@ -85,19 +86,17 @@
 
 <script>
 import FooterForm from "@/components/FooterForm/FooterForm";
-import app from '../firebase'
+import app from "../firebase";
 export default {
   name: "SingleProductView",
   components: { FooterForm },
-  props:['productId'],
+  props: ["productId"],
   data() {
     return {
       productName: "Doncaster Chair",
       selectedImg: 0,
       zoomerShown: false,
-      productImages: [
-        
-      ],
+      productImages: [],
       productDesc: `Oak veneered table top with solid oak legs, two oak drawers with brass knobs. Drawer inside measurements are W202/D550/H54mm. Drawers are without rails (classical drawers). At rear of table top there is one brass coated hole for cables.`,
       productDimen: "as per your requirement",
       polishTypes: [
@@ -126,14 +125,9 @@ export default {
     },
     mouseover: function() {
       this.zoomerShown = true;
-      this.initZoom('myimage','bigImg');
-      
     },
     mouseleave: function() {
       this.zoomerShown = false;
-      var old_element = document.getElementById("myimage");
-      var new_element = old_element.cloneNode(true);
-      old_element.parentNode.replaceChild(new_element, old_element);
     },
     initZoom: function(imgID, resultID) {
       var img, lens, result, cx, cy;
@@ -148,7 +142,7 @@ export default {
       cx = result.offsetWidth / lens.offsetWidth;
       cy = result.offsetHeight / lens.offsetHeight;
       /* Set background properties for the result DIV */
-       result.style.backgroundImage = "url('" + img.src + "')";
+      result.style.backgroundImage = "url('" + img.src + "')";
       result.style.backgroundSize =
         img.width * cx + "px " + img.height * cy + "px";
       /* Execute a function when someone moves the cursor over the image, or the lens: */
@@ -201,19 +195,21 @@ export default {
         return { x: x, y: y };
       }
     },
-    getImagesFromServer:function(){
-      const products = []
-      const product = this.$store.state.products.find((item)=>{
-        return item.id == this.productId
-      })
+    getImagesFromServer: function() {
+      const products = [];
+      const product = this.$store.state.products.find(item => {
+        return item.id == this.productId;
+      });
 
       this.productName = product.name;
       product.imgs.forEach(imgRef => {
-        app.storage.getURL({
-          fileId:imgRef.id
-        }).then((res)=>{
-          products.push(res);
-        })
+        app.storage
+          .getURL({
+            fileId: imgRef.id
+          })
+          .then(res => {
+            products.push(res);
+          });
       });
 
       this.productImages = products;
@@ -291,8 +287,9 @@ export default {
 
     .img {
       width: 100%;
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
       height: 50vh;
       transition: 0.2s ease background;
 
@@ -319,7 +316,7 @@ export default {
       width: 100px;
       height: 100px;
       margin: 0 16px;
-      
+
       @include for-phone-only {
         width: 57px;
         height: 57px;
@@ -413,23 +410,24 @@ export default {
       .img {
         width: 600px;
         height: 100%;
-        background-size: cover;
-        object-fit: cover;
-        object-position: center;
+        object-position: bottom;
         background-position: center;
         background-repeat: no-repeat;
         align-self: flex-end;
         transition: all 0.2s ease;
+        overflow: hidden;
+        position: relative;
       }
+      .img:hover{
+        cursor: zoom-in;
 
-      .bigImg {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        
-        background-repeat: no-repeat;
-        left: 100%;
-        top: 0;
+        &::after{
+          content: "User Scroll To Zoom";
+          position: absolute;
+          top:0;
+          left:0;
+          color: black;
+        }
       }
     }
 
@@ -502,11 +500,5 @@ export default {
     margin-top: 8px;
   }
 }
-.img-zoom-lens {
-  position: absolute;
-  /*set the size of the lens:*/
-  width: 200px;
-  height: 200px;
-  cursor: move;
-}
+
 </style>

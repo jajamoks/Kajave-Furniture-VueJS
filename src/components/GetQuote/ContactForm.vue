@@ -7,15 +7,15 @@
          <input name="bot-field" hidden />
         <md-field md-theme="kajave">
           <label>Name</label>
-          <md-input name="User Name" v-model="name"></md-input>
+          <md-input name="User Name" v-model="name" required></md-input>
         </md-field>
         <md-field md-theme="kajave">
           <label>Email</label>
-          <md-input v-model="email" name="Email"></md-input>
+          <md-input v-model="email" name="Email" type="email" required></md-input>
         </md-field>
         <md-field md-theme="kajave">
           <label for="city">City</label>
-          <md-select v-model="city" name="City" id="city" md-dense>
+          <md-select v-model="city" name="City" id="city" required md-dense>
             <md-option class="select" value="Kolhapur">Kolhapur</md-option>
             <md-option class="select" value="Pune">Pune</md-option>
             <md-option class="select" value="Satara">Satara</md-option>
@@ -24,7 +24,7 @@
 
         <md-field md-theme="kajave">
           <label>Textarea</label>
-          <md-textarea name="Message" v-model="message"></md-textarea>
+          <md-textarea required name="Message" v-model="message"></md-textarea>
         </md-field>
         <button @click="submitForm" class="submit">Submit</button>
       </form>

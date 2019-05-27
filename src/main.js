@@ -3,7 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Sticky from 'vue-sticky-directive'
-import { MdField,MdProgress} from 'vue-material/dist/components';
+import VueZoomer from 'vue-zoomer'
+import 'vue-zoomer/dist/vue-zoomer.css'
+
+import { MdField,MdProgress,MdList,MdMenu} from 'vue-material/dist/components';
 import 'vue-material/dist/vue-material.min.css'
 // import 'vue-material/dist/theme/default.css'
 
@@ -11,6 +14,9 @@ Vue.config.productionTip = false
 
 Vue.use(MdField);
 Vue.use(MdProgress);
+Vue.use(MdList);
+Vue.use(MdMenu);
+Vue.use(VueZoomer)
 
 Vue.use(Sticky)
 
