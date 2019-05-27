@@ -4,7 +4,7 @@
     <div class="form">
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact">
-         <input name="bot-field" />
+         <input name="bot-field" hidden />
         <md-field md-theme="kajave">
           <label>Name</label>
           <md-input name="User Name" v-model="name"></md-input>
