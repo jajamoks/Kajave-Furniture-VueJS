@@ -3,18 +3,18 @@
     <h1 class="quote-heading">GET IN TOUCH</h1>
     <div class="form">
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact">
         <md-field md-theme="kajave">
           <label>Name</label>
           <md-input name="User Name" v-model="name"></md-input>
         </md-field>
         <md-field md-theme="kajave">
           <label>Email</label>
-          <md-input v-model="email" name = "Email" ></md-input>
+          <md-input v-model="email" name="Email"></md-input>
         </md-field>
         <md-field md-theme="kajave">
           <label for="city">City</label>
-          <md-select v-model="city"  name="City" id="city" md-dense>
+          <md-select v-model="city" name="City" id="city" md-dense>
             <md-option class="select" value="Kolhapur">Kolhapur</md-option>
             <md-option class="select" value="Pune">Pune</md-option>
             <md-option class="select" value="Satara">Satara</md-option>
@@ -28,6 +28,7 @@
         <button @click="submitForm" class="submit">Submit</button>
       </form>
     </div>
+    
     <p class="copyright">Kajave Furniture | Copyright {{date}}</p>
   </div>
 </template>
@@ -138,6 +139,7 @@ export default {
 
   .form {
     margin: 0 26px;
+    // display: none;
 
     @include for-tablet-portrait-up {
       width: 70%;
