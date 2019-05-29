@@ -39,20 +39,40 @@ export default {
           img: require("../../assets/Testimonials/ar vineet.jpg")
         },
         {
-          name: "Sonal Yadav",
+          name: "Mrs. Sonal Yadav",
           message:
             "Kajave furniture is just “ONE STOP SHOP” for your need of premium quality solid wood furniture. Ultimate service and the personal customer touch give us the best in what we are looking for. I would 100% suggest to go for kajave furniture only!",
           img: require("../../assets/Testimonials/sonal_yadav.png")
         },
         {
           name: "Ar. Sujay Kulkarni",
-          message: `I have associated with kajave furniture for major of my
+          message:`I have associated with kajave furniture for major of my
             projects, and have been satisfied for the product so far from
             the design, material and service point of view. It is always
             pleasure to work with the technical team in kajave industries
             for any kind of customisation in design.
             Best wishes`,
           img: require("../../assets/Testimonials/ar_sujay.jpeg")
+        },
+        {
+          name: "Mr. Nilesh Hankare",
+          message:`Kajave manje kolhapur madhil ek 100% quality,
+            Guarantee furniture Denare Dalan, Mi Tyanchyakadun
+            Mazya New Hotel sathi Furniture Purchase kele Mazya
+            hotel la Sunder Gateup aala Mazyakade yenarya 200
+            te 300 coustemer ne inquiry kele ki he furniture
+            kuthun ghetale Sagalyna Avadale aahe Tasech Kajave
+            Furniture order velet purn karun detat ,Mala Avadale
+            Tumala hi Avadel`,
+          img: require("../../assets/Testimonials/nilesh.jpeg")
+        },
+        {
+          name: "Mr. Kapil C. Bhingarde",
+          message:`The only place in Kolhapur for unique and vast
+            collection of solid wood furniture.
+            We bought dinning table chairs which are of
+            unique design and very well fit and finished.`,
+          img: require("../../assets/Testimonials/kapil.jpeg")
         }
       ]
     };

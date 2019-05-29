@@ -63,7 +63,7 @@
       <div class="three">
         <h1>{{productName}}</h1>
         <p>{{productDesc}}</p>
-        <h4>Dimensions : As Per Your Requirement</h4>
+        <!-- <h4>Dimensions : As Per Your Requirement</h4> -->
         <div class="polish">
           <h4>Available Polish Type :</h4>
           <ul>
@@ -73,7 +73,7 @@
             </li>
           </ul>
         </div>
-        <p class="fabric">*Fabrics available as per your choices.</p>
+        <!-- <p class="fabric">*Fabrics available as per your choices.</p> -->
       </div>
     </div>
     <div class="showall phone-only">

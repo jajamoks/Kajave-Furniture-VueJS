@@ -63,7 +63,6 @@ export default {
 .app-content {
   width: 100%;
   padding-top: 1px;
-  padding-bottom: 1px;
   box-sizing: border-box;
   @include for-phone-only {
     padding-top: 54px;

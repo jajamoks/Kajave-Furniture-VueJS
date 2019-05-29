@@ -13,7 +13,7 @@
         :key="product.name"
         class="card"
         @click="goToProduct(product)">
-        <div class="container " :class="[{landscape:title === 'SOFAS'},{landscape:title === 'BEDS & BEDSIDES'},,{landscape:title === 'DINING TABLES & CHAIRS'},]">
+        <div class="container " :class="[{landscape:title === 'SOFAS'},{landscape:title === 'BEDS'},,{landscape:title === 'DINING'},{landscape:title === 'Center Table'},{landscape:title === 'Indian Sitting'}]">
           <img :src="product.img">
           <h4>{{product.name}}</h4>
         </div>
@@ -97,14 +97,14 @@ export default {
     padding-bottom: 32px;
 
     .card {
-      width: 33%;
+      max-width: 33%;
       box-sizing: border-box;
       border-bottom: 0.1px solid rgb(100, 100, 100);
       @include for-phone-only {
         width: 50%;
       }
       @include for-tablet-portrait-up{
-        padding: 0;
+        padding:0;
       }
 
       .container {

@@ -22,9 +22,13 @@
             <span
               style="color:#9E866A"
             >pure solid wooden, high quality finished furniture and furniture products</span> across Western Maharashtra and Pan India. Under the experienced guidance and nurturing of Mr. Rajesh Kajave and Mrs. Kavita R. Kajave, the brand "KAJAVE FURNITURE" is very ably managed by the next generation entrepreneurs Ar. Veeren R. Kajave and Ar. Mrunal V. Kajave.
-          </p>
+          </p>          
         </div>
         <div class="section-2">
+          <p class="pfirst">Kajave Furniture is the fastest growing process driven branded Solid Wooden Furniture Manufacturer having a physical presence in Kolhapur, Satara and Pune in Maharashtra, India. Kajave Furniture has its multifarious lavish furniture showroom in Lonar Vasahat, Kolhapur which is spread over 7500 sq. ft of area.</p>
+          <br>
+          <p>We create, innovate and customize classy solid wood furniture. We offer a variety of exclusive versatile wooden home furniture ranging from beds and bedside tables to dining tables, chairs, center tables, wooden sofa sets, wardrobes, along with exclusively only customized pure solid wooden accessories to name a few. Customized wooden furniture is only available in Kolhapur. </p>
+          <br>
           <p>
             Kajave Furniture is well known to provide
             <span
@@ -34,15 +38,28 @@
         </div>
         <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
         <div class="carousel-wrapper">
-         
           <Carousel/>
-           <div class="bg">
-             <p
-          class="read-text"
-        >The primary focus area is classy furniture for living room, bedroom, lounge, theme restaurants and sit-outs. We also provide made to order customized wooden furniture along with complete home décor interior solutions based on specific taste, designs, utility and requirements of our clients. We provide quality assurance and warranty for all our furniture products.</p>
-           </div>
+          <div class="bg">
+            <p
+              class="read-text"
+            >The primary focus area is classy furniture for living room, bedroom, lounge, theme restaurants and sit-outs. We also provide made to order customized wooden furniture along with complete home décor interior solutions based on specific taste, designs, utility and requirements of our clients. We provide quality assurance and warranty for all our furniture products.</p>
+          </div>
         </div>
-        
+        <ProcessComponent/>
+        <div class="below-process">
+          <p>To contribute and give back to the society in some positive way the management team at Kajave Furniture has donated books to students of a local government school. Such social initiatives are a regularly undertaken by the organization.</p>
+          <br>
+          <p>To promote our brand and to communicate with our prospective customers we regularly participate in property Dalan exhibition at Kolhapur hosted by CREDAI Kolhapur. In the year 2018, we have also participated in the Aahar Ways exhibition at Goa.</p>
+          <br>
+          <p>
+            The brand
+            <strong style="color:#9E866A">"KAJAVE FURNITURE"</strong> therefore is well known and synonymous for firmly believing in
+            <span>trues</span>,
+            <span>honesty</span>,
+            <span>transparency</span> and
+            <span>ethical practices</span>.
+          </p>
+        </div>
         <Team/>
       </div>
     </div>
@@ -55,15 +72,17 @@
 import Carousel from "@/components/AboutCarousel/Carousel";
 import Team from "@/components/Team/Team";
 import FooterForm from "@/components/FooterForm/FooterForm";
+import ProcessComponent from "@/components/Process/Process";
 export default {
   name: "AboutView",
   components: {
     Carousel,
     Team,
-    FooterForm
+    FooterForm,
+    ProcessComponent
   },
-  mounted(){
-    window.scrollTo(0,0);
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
@@ -87,6 +106,7 @@ export default {
 #about {
   width: 100%;
   position: relative;
+  overflow: hidden;
   .heading {
     font-family: Exo;
     font-style: normal;
@@ -97,7 +117,7 @@ export default {
     color: #9e866a;
     text-transform: uppercase;
 
-     @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up {
       font-size: 36px;
       margin-top: 32px;
       margin-bottom: 10px;
@@ -108,7 +128,7 @@ export default {
     margin-bottom: 20px;
   }
 
-   .dual-view {
+  .dual-view {
     width: 100%;
     @include for-tablet-portrait-up {
       display: flex;
@@ -185,19 +205,22 @@ export default {
       padding: 0 16px;
       font-size: 16px;
 
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         font-size: 18px;
       }
     }
   }
 
-  
-
   .section-2 {
     width: 100%;
     padding: 20px;
     text-align: left;
-    
+    .pfirst{
+      @include for-tablet-portrait-up{
+        margin-top:32px
+      }
+    }
+
     p {
       font-style: normal;
       font-weight: normal;
@@ -205,38 +228,57 @@ export default {
       line-height: 21px;
       color: #8a8a8a;
       padding: 0 16px;
-       @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         font-size: 18px;
         margin-bottom: 32px;
       }
     }
   }
 
-  .carousel-wrapper{
+  .carousel-wrapper {
     position: relative;
-    
-    @include for-tablet-portrait-up{
+
+    @include for-tablet-portrait-up {
       margin-top: 32px;
     }
-    .bg{
+    .bg {
       width: 100%;
       padding-top: 300px;
       margin-top: -300px;
       background: #f1f1f1;
 
-      @include for-phone-only{
+      @include for-phone-only {
         margin-top: -190px;
         padding-top: 190px;
       }
-
     }
-    p{
-     
+    p {
       padding-bottom: 20px;
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         margin-top: 32px;
         padding-bottom: 32px;
         margin: 32px 80px;
+      }
+    }
+  }
+  .below-process {
+    width: 100%;
+    text-align: left;
+    margin: 32px 0;
+
+    p {
+      text-align: justify;
+      color: #8a8a8a;
+      font-weight: normal;
+      padding: 0 16px;
+      font-size: 16px;
+
+      span {
+        color: black;
+      }
+
+      @include for-tablet-portrait-up {
+        font-size: 18px;
       }
     }
   }

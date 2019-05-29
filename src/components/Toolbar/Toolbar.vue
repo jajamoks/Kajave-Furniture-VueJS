@@ -69,6 +69,7 @@ export default {
   position: fixed;
   z-index: 1000;
   border-bottom: 1px solid rgb(190, 190, 190);
+  
 
   a {
     text-decoration: none;

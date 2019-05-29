@@ -19,75 +19,85 @@
 </template>
 
 <script>
-import Gallery from '@/components/Gallery/Gallery'
-import FooterForm from '@/components/FooterForm/FooterForm'
+import Gallery from "@/components/Gallery/Gallery";
+import FooterForm from "@/components/FooterForm/FooterForm";
 export default {
-  components:{
+  components: {
     Gallery,
     FooterForm
   },
-  data(){
-    return{
-      products:[],
-      title:''
-    }
+  data() {
+    return {
+      products: [],
+      title: ""
+    };
   },
-  props:['id'],
-  mounted(){
-    window.scrollTo(0,0);
+  props: ["id"],
+  mounted() {
+    window.scrollTo(0, 0);
 
     switch (this.id) {
-      case 'chairs':
-        this.title = "Chairs"
+      case "chairs":
+        this.title = "Chairs";
         this.products = [];
-        this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'chair';
-        })
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "chair";
+        });
         break;
-      case 'beds':
-        this.title = "BEDS & BEDSIDES"
-         this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'bed';
-        })
-        break;
-        
-      case 'dining':
-        this.title = "DINING TABLES & CHAIRS"
-         this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'dining';
-        })
-        break;
-      case 'sofas':
-        this.title = "SOFAS"
-        this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'sofa';
-        }) 
+      case "beds":
+        this.title = "BEDS";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "bed";
+        });
         break;
 
-      case 'cabinets':
-        this.title = "CABINETS"
-        this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'cabinet';
-        })
+      case "dining":
+        this.title = "DINING";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "dining";
+        });
+        break;
+      case "sofas":
+        this.title = "SOFAS";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "sofa";
+        });
         break;
 
-      case 'sideboards':
-        this.title = "SIDEBOARDS"
-        this.products = this.$store.state.products.filter((product)=>{
-          return product.type == 'sideboard';
-        })
+      case "chestofdrawers":
+        this.title = "CHEST OF DRAWERS";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "chestofdrawers";
+        });
         break;
-    
+      case "wardrobe":
+        this.title = "Wardrobe";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "wardrobe";
+        });
+        break;
+      case "indiansitting":
+        this.title = "Indian Sitting";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "indiansitting";
+        });
+        break;
+        case "centertable":
+        this.title = "Center Table";
+        this.products = this.$store.state.products.filter(product => {
+          return product.type == "centertable";
+        });
+        break;
+
       default:
         break;
     }
-    
   }
-}
+};
 </script>
 
 <style lang="scss" scopped>
-#prods{
+#prods {
   width: 100%;
   position: relative;
 

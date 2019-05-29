@@ -23,7 +23,14 @@
 
         <div class="section-2">
           <h2>Personalized Care &amp; Consulting at KAJAVE FURNITURE:</h2>
-          <p>Our professional design team is happy to assist you in all aspects of your furniture selection and purchase experience. Right from the point of understanding a customer's unique taste, to the right selection of richest fabrics, to the polish shades with meticulous attention to the minute details to bring every product alive, our designers are happy to assist at every step.</p>
+          <p>
+            Kajave Furniture is well known to provide customized design solutions in
+            traditional, ethnic antique, contemporary and modern styles in solid wood.
+            With a successful beginning from initially a furniture distributor, to setting up
+            our own factory and infrastructure to support, to manufacturing our branded
+            furniture Kajave Furniture has taken a stride towards forwarding integrated
+            progress.
+          </p>
           <h3>We at Kajave Furniture firmly believe in our outlined USP's as follows:</h3>
         </div>
 
@@ -66,14 +73,13 @@
         </div>
         <div class="desktop-section-5">
           <div class="factory-item">
-            <img  src="../assets/factory/1.jpg" >
+            <img src="../assets/factory/1.jpg">
             <img src="../assets/factory/2.jpg">
-            <p>We make use of European beech wood for various furniture requirements of our clients. Our target audience for solid wooden furniture is of all age groups spread across all income groups. We offer the facility of buying furniture on finance through association with Bajaj Capital. </p>
+            <p>We make use of European beech wood for various furniture requirements of our clients. Our target audience for solid wooden furniture is of all age groups spread across all income groups. We offer the facility of buying furniture on finance through association with Bajaj Capital.</p>
           </div>
           <hr>
           <div class="factory-item">
-            <p>All process related to the production of our furniture right from the selection of the wood, cutting the wood, precision laser cutting, joinery, molding, sanding to polishing is done in our state of the art centralized workshop unit.
-            </p>
+            <p>All process related to the production of our furniture right from the selection of the wood, cutting the wood, precision laser cutting, joinery, molding, sanding to polishing is done in our state of the art centralized workshop unit.</p>
             <img src="../assets/factory/3.jpg" alt>
             <img src="../assets/factory/4.jpg" alt>
           </div>
@@ -103,8 +109,8 @@ export default {
       ]
     };
   },
-  mounted(){
-    window.scrollTo(0,0);
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
@@ -117,13 +123,13 @@ export default {
   border-top: 0.2px solid rgb(190, 190, 190);
   border-bottom: 0.2px solid rgb(190, 190, 190);
   text-align: center !important;
-    @include for-tablet-portrait-up{
-        display: none;
-    }
+  @include for-tablet-portrait-up {
+    display: none;
+  }
 }
 
-.phone-only{
-  @include for-tablet-portrait-up{
+.phone-only {
+  @include for-tablet-portrait-up {
     display: none;
   }
 }
@@ -131,7 +137,6 @@ export default {
 #factory {
   width: 100%;
   padding-top: 1px;
-  
 
   .heading {
     font-family: Exo;
@@ -142,13 +147,12 @@ export default {
     color: #9e866a;
     text-transform: uppercase;
 
-    @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up {
       font-size: 36px;
       margin-top: 32px;
       margin-bottom: 10px;
     }
   }
-
 
   .dual-view {
     width: 100%;
@@ -212,18 +216,17 @@ export default {
     }
   }
 
-
   .lines_dot {
     margin-bottom: 20px;
   }
 
   .section-1 {
     background: #f1f1f1;
-    @include for-phone-only{
+    @include for-phone-only {
       padding: 21px;
     }
 
-    @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up {
       padding: 32px;
     }
 
@@ -241,17 +244,17 @@ export default {
     img {
       margin-bottom: 20px;
 
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         width: 100%;
       }
     }
   }
 
   .section-2 {
-    @include for-phone-only{
+    @include for-phone-only {
       padding: 21px;
     }
-    @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up {
       padding: 32px;
     }
     p {
@@ -273,12 +276,11 @@ export default {
       text-align: center;
       color: #9e866a;
 
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         line-height: 48px;
         width: 600px;
-        margin:0 auto;
+        margin: 0 auto;
         margin-bottom: 32px;
-        
       }
 
       @include for-phone-only {
@@ -318,7 +320,7 @@ export default {
         margin: 8px 8px;
       }
 
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         margin: 8px 16px;
       }
 
@@ -332,7 +334,7 @@ export default {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
 
         @include for-phone-only {
           font-size: 9px;
@@ -352,7 +354,7 @@ export default {
     align-items: center;
     padding: 30px;
 
-    @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up {
       justify-content: space-evenly;
     }
 
@@ -367,7 +369,7 @@ export default {
         width: 100%;
       }
 
-      @include for-tablet-portrait-up{
+      @include for-tablet-portrait-up {
         width: 45%;
         height: 230px;
       }
@@ -379,7 +381,7 @@ export default {
         color: #9e866a;
         text-align: left;
 
-        @include for-tablet-portrait-up{
+        @include for-tablet-portrait-up {
           font-size: 18px;
           line-height: 24px;
         }
@@ -400,8 +402,6 @@ export default {
   }
 
   .section-5 {
-
-
     p {
       font-weight: normal;
       font-size: 18px;
@@ -414,7 +414,6 @@ export default {
     }
   }
 
-
   .imgs {
     display: flex;
     img {
@@ -426,9 +425,8 @@ export default {
     }
   }
 
-
-  .desktop-section-5{
-    @include for-phone-only{
+  .desktop-section-5 {
+    @include for-phone-only {
       display: none;
     }
 
@@ -436,23 +434,23 @@ export default {
     padding: 32px;
     align-items: center;
 
-    .factory-item{
+    .factory-item {
       width: 100%;
       display: flex;
       justify-content: center;
       margin: 24px 0;
 
-      img{
+      img {
         max-height: 300px;
         margin: 8px;
       }
 
-      p{
+      p {
         text-align: left;
-        margin:8px;
+        margin: 8px;
         font-weight: normal;
         line-height: 24px;
-        color: #3C3C3C;
+        color: #3c3c3c;
         margin: 2px 16px;
         font-size: 18px;
       }

@@ -46,34 +46,46 @@ export default {
     return {
       categories: [
         {
-          img: require("../assets/Categories/bed.webp"),
-          title: "BEDS & BEDSIDES",
-          route:'beds'
-        },
-        {
-          img: require("../assets/Categories/dining.jpg"),
-          title: "DINING TABLES & CHAIRS",
-          route:'dining'
-        },
-        {
           img: require("../assets/Categories/sofa.webp"),
           title: "SOFAS",
           route:'sofas'
         },
+        
         {
-          img: require("../assets/Categories/chair.webp"),
+          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FelZeMjVsu8KDFD7cId88_UT7A0650ok.webp?alt=media&token=35fece62-0f01-4ebf-880f-e6f66628e18f',
           title: "CHAIRS",
           route:'chairs'
         },
         {
-          img: require("../assets/Categories/cabinets.webp"),
-          title: "Cabinets",
-          route:'cabinets'
+          img: require("../assets/Categories/dining.jpg"),
+          title: "DINING",
+          route:'dining'
         },
         {
-          img: require("../assets/Categories/sideboards.webp"),
-          title: "Sideboards",
-          route:'sideboards'
+          img: require("../assets/Categories/ct.webp"),
+          title: "Center Table",
+          route:'centertable'
+        },
+        {
+          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FrJfv76E1GfTwNMDuL8Eg_UT7A1387ok.webp?alt=media&token=874b3879-3f18-459c-a51e-b62454f0b38c',
+          title: "BEDS",
+          route:'beds'
+        }, 
+        {
+          img: require("../assets/Categories/wd.webp"),
+          title: "Wardrobe",
+          route:'wardrobe'
+        },
+        
+        {
+          img: require("../assets/Categories/cabinets.webp"),
+          title: "Chest Of Drawers",
+          route:'chestofdrawers'
+        },
+        {
+          img: require("../assets/Categories/ind_sitting.webp"),
+          title: "Indian Siting",
+          route:'indiansitting'
         }
       ]
     };

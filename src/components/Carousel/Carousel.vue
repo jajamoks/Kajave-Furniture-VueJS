@@ -27,17 +27,22 @@ export default {
          {
           
           text:'Quality Furniture every home needs',
-          img:require('../../assets/Carousel/sofa.jpg')
+          img:require('../../assets/Carousel/1.webp')
         },
         {
           text:'Nothing like else !',
-          img:require('../../assets/Carousel/slider_one.webp')
+          img:require('../../assets/Carousel/2.webp')
         },
        
         {
           
           text:'Crafting happiness since 1900',
-          img:require('../../assets/Carousel/slider_three.webp')
+          img:require('../../assets/Carousel/3.webp')
+        },
+        {
+          
+          text:'Crafting happiness since 1900',
+          img:require('../../assets/Carousel/4.webp')
         }
       ]
     }
