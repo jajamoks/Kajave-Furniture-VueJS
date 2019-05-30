@@ -130,6 +130,7 @@ export default {
 
   .top-flex {
     display: flex;
+    flex-direction: column;
     padding: 16px;
     box-sizing: border-box;
     justify-content: space-evenly;
@@ -139,7 +140,7 @@ export default {
 
     @include for-phone-only {
       align-items: center;
-      flex-direction: column;
+      
       padding-top: 8px;
     }
 
@@ -169,6 +170,9 @@ export default {
     .desc {
       padding: 8px;
       width: 100%;
+      @include for-tablet-portrait-up{
+      padding: 0 100px;
+      }
       p {
         font-weight: normal;
         font-size: 18px;
@@ -193,8 +197,6 @@ export default {
       align-items: flex-end;
       position: relative;
       @include for-tablet-portrait-up {
-        float: right;
-        align-self: flex-end;
         height: 80px;
       }
 

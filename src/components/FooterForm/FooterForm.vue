@@ -1,7 +1,7 @@
 <template>
   <div id="ff">
     <div class="nav-top">
-      <ul>
+      <ul id="nav-phone">
         <li v-for="menu in menuItems" :key="menu.name">
           <router-link :to="menu.link">{{menu.name}}</router-link>
         </li>
@@ -97,6 +97,14 @@ export default {
 </script>
 
 <style lang="scss" scopped>
+#nav-phone{
+  @include for-phone-only{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #ff {
   width: 100%;
   display: flex;
