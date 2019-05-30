@@ -53,13 +53,22 @@ export default {
           desc:
             "If one of our existing designs does not work for you, we welcome the opportunity to create a custom piece of furniture for you.\nAfter we meet and get an idea either from a conversation or a photo or two we will provide preliminary drawings as needed to arrive at a desired outcome.",
           img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2F4fuMJTAkDPpTs49jhPGp_DSC_0587.webp?alt=media&token=9d9a6d35-0ca0-4c6b-ad1c-403588d1b1eb"
+            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FIPxz2S8xyQZVW4KqmOmo_sketch.jpeg?alt=media&token=b62844e8-927d-47b4-85a9-83c9704df9d5"
         },
         {
           desc: `After we meet and get an idea either from a conversation or a photo or two we will provide preliminary drawings as needed to arrive at a desired outcome.
             If one of our existing designs does not work for you, we welcome the opportunity to create a custom piece of furniture for you.`,
           img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FLO1vXISfeh2T6MdoGdMh_FILE2025.webp?alt=media&token=7290b67d-6c5c-459e-8327-4c92d25d1fe6"
+            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2F7sgDgHrJMYABil1yFKB5_DSC_0598.webp?alt=media&token=30683e65-e21a-4b5a-9215-36a4a9e9178b"
+        },
+        {
+          img:'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FfAUmjkM1gZoaajJyddzj_FILE1920.webp?alt=media&token=d9dea9c4-cd54-4f2f-831a-4cf06eb5ed2f'
+        },
+        {
+          img:'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FKu4SG5t7bgJgiH7c8fpP_DSC_0635.webp?alt=media&token=c4df530d-df1e-49db-8938-7e6c7831a73a'
+        },
+        {
+          img:'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FiCEExBiOCkHyOCbiTS12_DSC_0647.webp?alt=media&token=4dd8a2e8-8675-413f-9a92-f723d0de8026'
         }
       ]
     };
@@ -264,10 +273,10 @@ export default {
 
   .bottom {
     width: 100%;
-    object-fit: cover;
-    height: 330px;
-    margin-bottom: 65px;
+    object-fit: contain;
+    height: 400px;
     transition: 0.3s all ease;
+    margin-bottom: -8px;
     @include for-phone-only {
       height: 180px;
       margin-bottom: 16px;
