@@ -1,6 +1,6 @@
 <template>
   <div id="process-comp">
-    <h1 class="title">PROCESS</h1>
+    <h1 class="title">Workflow</h1>
     <img class="lines_dot" src="../../assets/Categories/lines_dot.png">
     <div class="top-flex">
       <div class="desc">
