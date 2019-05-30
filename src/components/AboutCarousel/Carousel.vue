@@ -25,7 +25,9 @@ export default {
       imgs:[
        'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FlmW6QJLJOZJr4MgwZfgL_2-_1_.webp?alt=media&token=5d6c56df-c8fc-4096-9156-1dbbad921df0',
        'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FlWSg5d00O07rwwOxI0z7_1%20(2).webp?alt=media&token=e06d0c5f-985c-426c-9f2b-2c72e2dfabb0',
-       'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FOR5nQ6HGESmuVMzWZtXf_15.webp?alt=media&token=d5e553cf-688d-4673-a2e0-6ab89426ef26'
+       'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FOR5nQ6HGESmuVMzWZtXf_15.webp?alt=media&token=d5e553cf-688d-4673-a2e0-6ab89426ef26',
+       `https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FjX1N5InVznknSMDgyu3P_IMG-20190306-WA0010.jpg?alt=media&token=f730a812-4380-4463-bd1b-3a2bcd41aed7`,
+       'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2Fi9zTrxxIfpJNeUw5029j_WhatsApp%20Image%202019-03-27%20at%2011.20.12%20AM.jpeg?alt=media&token=637caef1-a0ff-4e32-8492-b6e92e3d9497'
 
       ]
     }
