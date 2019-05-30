@@ -71,11 +71,6 @@ export default {
           title: "BEDS",
           route:'beds'
         }, 
-        {
-          img: require("../assets/Categories/wd.webp"),
-          title: "Wardrobe",
-          route:'wardrobe'
-        },
         
         {
           img: require("../assets/Categories/cabinets.webp"),

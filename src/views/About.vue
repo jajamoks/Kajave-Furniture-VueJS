@@ -26,9 +26,7 @@
         </div>
         <div class="section-2">
           <p class="pfirst">Kajave Furniture is the fastest growing process driven branded Solid Wooden Furniture Manufacturer having a physical presence in Kolhapur, Satara and Pune in Maharashtra, India. Kajave Furniture has its multifarious lavish furniture showroom in Lonar Vasahat, Kolhapur which is spread over 7500 sq. ft of area.</p>
-          <br>
-          <p>We create, innovate and customize classy solid wood furniture. We offer a variety of exclusive versatile wooden home furniture ranging from beds and bedside tables to dining tables, chairs, center tables, wooden sofa sets, wardrobes, along with exclusively only customized pure solid wooden accessories to name a few. Customized wooden furniture is only available in Kolhapur. </p>
-          <br>
+          <p>We create, innovate and customize classy solid wood furniture. We offer a variety of exclusive versatile wooden home furniture ranging from beds and bedside tables to dining tables, chairs, center tables, wooden sofa sets, wardrobes, along with exclusively only customized pure solid wooden accessories to name a few. Customisation is only available in Kolhapur. </p>
           <p>
             Kajave Furniture is well known to provide
             <span
@@ -46,6 +44,7 @@
           </div>
         </div>
         <ProcessComponent/>
+        <p  style="color:#B04444; text-align:right; padding-right:16px"> *Customisation is only available in Kolhapur.</p>
         <div class="below-process">
           <p>To contribute and give back to the society in some positive way the management team at Kajave Furniture has donated books to students of a local government school. Such social initiatives are a regularly undertaken by the organization.</p>
           <br>
@@ -72,7 +71,7 @@
 import Carousel from "@/components/AboutCarousel/Carousel";
 import Team from "@/components/Team/Team";
 import FooterForm from "@/components/FooterForm/FooterForm";
-import ProcessComponent from "@/components/Process/Process";
+import ProcessComponent from "@/components/Process/Process2";
 export default {
   name: "AboutView",
   components: {
@@ -88,6 +87,7 @@ export default {
 </script>
 
 <style lang="scss" scopped>
+
 .text-1 {
   font-size: 12px;
   font-weight: 600;
@@ -117,11 +117,17 @@ export default {
     color: #9e866a;
     text-transform: uppercase;
 
+    
+
     @include for-tablet-portrait-up {
       font-size: 36px;
       margin-top: 32px;
       margin-bottom: 10px;
     }
+  }
+
+  p{
+    font-weight: 400 !important;
   }
 
   .lines_dot {
@@ -228,6 +234,7 @@ export default {
       line-height: 21px;
       color: #8a8a8a;
       padding: 0 16px;
+      margin-bottom: 16px;
       @include for-tablet-portrait-up {
         font-size: 18px;
         margin-bottom: 32px;

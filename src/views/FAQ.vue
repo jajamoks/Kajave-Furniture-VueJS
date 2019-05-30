@@ -16,7 +16,7 @@
       </div>
       <div class="tile">
         <h1 class="title">How do I buy a product on EMI?</h1>
-        <p>For payment convenience of our customers. We are associated with BAJAJ FINSERVE to offer our furniture products on EMI basis. Bajaj Finance executive will assist you in the process of your purchase through EMI.</p>
+        <p>For payment convenience of our customers. We are associated with BAJAJ FINSERV to offer our furniture products on EMI basis. Bajaj Finserv executive will assist you in the process of your purchase through EMI.</p>
         <br>
         <p>We offer our customers and option to purchase through their credit card. The credit card issuing bank will provide the facility of breaking down the purchase in flexible EMI’s to the customers.</p>
       </div>
