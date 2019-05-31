@@ -2,8 +2,8 @@
   <div id="product">
     <p class="text-1">Solid Wooden Furniture</p>
     <div class="appbar">
-      <img class="left-btn" @click="navigateBack" src="../assets/Products/ic_left.png" alt>
-      <h1 class="heading">{{productName}}</h1>
+      <img class="left-btn" @click="navigateBack" src="../assets/left.png" alt>
+      <h1 class="p-name">{{productName}}</h1>
     </div>
     <div class="showcase-phone">
       <div class="product-img">
@@ -246,7 +246,7 @@ export default {
   width: 100%;
   position: relative;
   overflow: hidden;
-
+  padding-top: 1px;
   .showcase-phone {
     @include for-tablet-portrait-up {
       display: none;
@@ -256,26 +256,51 @@ export default {
   .appbar {
     width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+
+    @include for-tablet-portrait-up{
+      height: 80px;
+    }
 
     .left-btn {
-      position: absolute;
-      left: 16px;
+      object-fit: contain;
+      width: 40px;
+      height: 40px;
+      margin-left: 16px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: 0.3s all ease;
+      padding: 8px;
+
+      @include for-tablet-portrait-up{
+        width: 48px;
+        height: 48px;
+        
+      }
+    }
+    .left-btn:hover{
+      border: 1px solid #9e866a;
     }
   }
 
-  .heading {
+  .p-name {
     font-family: Exo;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     margin-top: 16px;
+    text-align: center;
     color: #9e866a;
     text-transform: uppercase;
+     margin-bottom: 16px;
+     margin-left: 16px;
 
     @include for-tablet-portrait-up {
       font-size: 24px;
       text-align: left;
-      margin-left: 64px;
+      margin-left: 32px;
+     
     }
   }
   .product-img {
@@ -284,6 +309,11 @@ export default {
     background: #f1f1f1;
     padding: 11px;
     margin-top: 16px;
+
+
+    @include for-phone-only{
+      margin-top: 8px;
+    }
 
     .img {
       width: 100%;

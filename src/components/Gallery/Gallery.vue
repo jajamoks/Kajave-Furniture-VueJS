@@ -9,7 +9,7 @@
 
     <div class="flex">
       <div
-        v-for="(product) in products"
+        v-for="(product) in sortedProducts"
         :key="product.name"
         class="card"
         @click="goToProduct(product)">
@@ -29,7 +29,6 @@ export default {
   props:['products','title'],
   data() {
     return {
-      
     };
   },
   methods: {
@@ -38,8 +37,13 @@ export default {
     },
     navigateBack: function() {
       this.$router.push("/");
-    },
-    
+    },  
+  },
+  
+  computed:{
+    sortedProducts: function(){
+      return this.products.sort((a,b) => (a.number > b.number) ? 1 : ((b.number > a.number) ? -1 : 0));
+    }
   }
 };
 </script>

@@ -69,8 +69,6 @@ export default {
   position: fixed;
   z-index: 1000;
   border-bottom: 1px solid rgb(190, 190, 190);
-  
-
   a {
     text-decoration: none;
     color: #80776a;
@@ -158,7 +156,7 @@ export default {
 
   .logo {
     background-image: url("../../assets/brand/nav-logo.png");
-    width: 100px;
+    width: 110px;
     height: 41px;
     background-size: contain;
     background-position: center;

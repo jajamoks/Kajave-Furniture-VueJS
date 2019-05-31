@@ -1,31 +1,6 @@
 <template>
   <div id="faq">
     <div class="content">
-      <h1 class="section-title">Frequently Asked Questions</h1>
-      <img class="lines_dot" src="../assets/Categories/lines_dot.png">
-      <p>Management Team at Kajave Furniture ensure that each and every furniture purchase transaction a customer carries out is in a protected and safe way. The confidence and trust our customers place is us is valued at the most optimum level.</p>
-      <br>
-      <p>Management Team at Kajave Furniture ensure that each and every furniture purchase transaction a customer carries out is in a protected and safe way. The confidence and trust our customers place is us is valued at the most optimum level.</p>
-      <div class="tile">
-        <h1
-          class="title"
-        >How can customer be able to cancel the order from before shipment / dispatch?</h1>
-        <p>For customer in Kolhapur simply give us a call on 0231-2665525/ +919822453544 or Email us on kajave.indu@gmail.com</p>
-        <br>
-        <p>For customer in Pune simply give us a call on +91 9595254747 or Email us on kajave.indu@gmail.com</p>
-      </div>
-      <div class="tile">
-        <h1 class="title">How do I buy a product on EMI?</h1>
-        <p>For payment convenience of our customers. We are associated with BAJAJ FINSERV to offer our furniture products on EMI basis. Bajaj Finserv executive will assist you in the process of your purchase through EMI.</p>
-        <br>
-        <p>We offer our customers and option to purchase through their credit card. The credit card issuing bank will provide the facility of breaking down the purchase in flexible EMI’s to the customers.</p>
-      </div>
-      <div class="tile">
-        <h1 class="title">What are the accepted payment modes?</h1>
-        <p>We accept payment through internet banking and mobile banking.</p>
-        <br>
-        <p>We accept payments through cheque payment mode and via Demand Draft. We will process your order once your cheque is honoured.</p>
-      </div>
       <h1 class="section-title">Privacy Policy</h1>
       <img class="lines_dot" src="../assets/Categories/lines_dot.png">
       <p>At Kajave Furniture our customer’s privacy is of optimum importance. The following privacy policy has been created to keep you informed about the fair usage of your information and data both on our online and offline mediums.</p>
@@ -88,6 +63,32 @@
         <h1 class="title">8. Copyright and Trademark</h1>
         <p>The name Kajave Furniture and the Kajave Corporate Logo are an intellectual property of M/s. Kajave Furniture and are duly protected by copyright and registered trademark.</p>
       </div>
+      <h1 class="section-title">Frequently Asked Questions</h1>
+      <img class="lines_dot" src="../assets/Categories/lines_dot.png">
+      <p>Management Team at Kajave Furniture ensure that each and every furniture purchase transaction a customer carries out is in a protected and safe way. The confidence and trust our customers place is us is valued at the most optimum level.</p>
+      <br>
+      <p>Management Team at Kajave Furniture ensure that each and every furniture purchase transaction a customer carries out is in a protected and safe way. The confidence and trust our customers place is us is valued at the most optimum level.</p>
+      <div class="tile">
+        <h1
+          class="title"
+        >How can customer be able to cancel the order from before shipment / dispatch?</h1>
+        <p>For customer in Kolhapur simply give us a call on 0231-2665525/ +919822453544 or Email us on kajave.indu@gmail.com</p>
+        <br>
+        <p>For customer in Pune simply give us a call on +91 9595254747 or Email us on kajave.indu@gmail.com</p>
+      </div>
+      <div class="tile">
+        <h1 class="title">How do I buy a product on EMI?</h1>
+        <p>For payment convenience of our customers. We are associated with BAJAJ FINSERV to offer our furniture products on EMI basis. Bajaj Finserv executive will assist you in the process of your purchase through EMI.</p>
+        <br>
+        <p>We offer our customers and option to purchase through their credit card. The credit card issuing bank will provide the facility of breaking down the purchase in flexible EMI’s to the customers.</p>
+      </div>
+      <div class="tile">
+        <h1 class="title">What are the accepted payment modes?</h1>
+        <p>We accept payment through internet banking and mobile banking.</p>
+        <br>
+        <p>We accept payments through cheque payment mode and via Demand Draft. We will process your order once your cheque is honoured.</p>
+      </div>
+      
     </div>
     <FormFooter/>
     <Footer/>

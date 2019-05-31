@@ -39,7 +39,7 @@ export default {
           img: require("../../assets/Testimonials/ar vineet.jpg")
         },
         {
-          name: "Mrs. Sonal Yadav",
+          name: "Id. Sonal Yadav",
           message:
             "Kajave furniture is just “ONE STOP SHOP” for your need of premium quality solid wood furniture. Ultimate service and the personal customer touch give us the best in what we are looking for. I would 100% suggest to go for kajave furniture only!",
           img: require("../../assets/Testimonials/sonal_yadav.png")

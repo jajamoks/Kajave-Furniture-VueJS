@@ -1,7 +1,7 @@
 <template>
   <div id="carousel-container">
      <carousel class="carousel" :per-page="1" :loop="true"  :autoplay="true" :mouse-drag="true" :paginationEnabled="false">
-      <slide class="slide" v-for="item in carouselItems" v-bind:key="item.text" :style='{ backgroundImage: `url(${item.img})` }'>
+      <slide class="slide" v-for="item in carouselItems" v-bind:key="item.img" :style='{ backgroundImage: `url(${item.img})` }'>
       </slide>    
   </carousel>
   <div class="nav-helper">

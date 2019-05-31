@@ -82,7 +82,7 @@ export default {
           return product.type == "indiansitting";
         });
         break;
-        case "centertable":
+      case "centertable":
         this.title = "Center Table";
         this.products = this.$store.state.products.filter(product => {
           return product.type == "centertable";
@@ -91,6 +91,11 @@ export default {
 
       default:
         break;
+    }
+  },
+  methods: {
+    sortProducts: function() {
+      
     }
   }
 };

@@ -162,8 +162,10 @@ export default {
         cursor: pointer;
         color: #696969;
       }
-      i:hover {
-        color: #9e866a;
+      a:hover {
+        i{
+          color: #9e866a;
+        }
       }
     }
 
@@ -179,8 +181,8 @@ export default {
         margin-bottom: 24px;
       }
       .bni {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
         border: 1px solid #696969;
         border-radius: 50%;
         position: relative;
@@ -188,8 +190,8 @@ export default {
 
       .line{
         width: 100px;
-        height: 0.5px;
-        background: rgba(255, 255, 255, 0.411);
+        height: 1px;
+        background: rgba(255, 255, 255, 0.274);
         margin: 0 8px;
       }
     }

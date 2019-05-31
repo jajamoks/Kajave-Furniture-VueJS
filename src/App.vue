@@ -27,7 +27,7 @@ export default {
         for (var key in res) {
           if (res.hasOwnProperty(key)) {
             var val = res[key];
-            this.$store.commit('addProductToState',{name:val.name,imgs:val.imgs,type:val.type,img:val.img,id:key})
+            this.$store.commit('addProductToState',{name:val.name,imgs:val.imgs,type:val.type,img:val.img,id:key,number:parseInt(val.number,10)})
           }
         }
         

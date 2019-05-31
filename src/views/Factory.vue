@@ -4,7 +4,7 @@
     <div class="dual-view">
       <div class="left" sticky-container>
         <div class="box" v-sticky :sticky-top="80" sticky-side="top">
-          <p>The primary focus area is classy furniture for living room, bedroom, lounge, theme restaurants and sit-outs. We also provide made to order customized wooden furniture along with complete home décor interior solutions based on specific taste, designs, utility and requirements of our clients. We provide quality assurance and warranty for all our furniture products.</p>
+          <p>Our centralized production infrastructure is based at Hupri Road, adjacent to Kolhapur Airport in Maharashtra, India. This infrastructure is fully equipped with the unit wise division of execution managed by skilled and trained craftsmen. We make use of all the latest machinery and processes for the production of our furniture products. The centralization of infrastructure, process, manpower and resources helps us in standardization and to maintain the grade of the finished products at par with international standards.</p>
           <div class="shape">
             <div class="dot"></div>
             <div class="line"></div>
@@ -170,11 +170,10 @@ export default {
       }
 
       .box {
-        padding: 119px 59px 119px 70px;
+        padding: 90px 59px 119px 70px;
         position: relative;
 
         p {
-          margin-top: 20px;
           font-weight: 300;
           font-size: 20px;
           line-height: 27px;

@@ -5,7 +5,12 @@
     <div class="dual-view">
       <div class="left" sticky-container>
         <div class="box" v-sticky :sticky-top="80" sticky-side="top">
-          <p>Our centralized production infrastructure is based at Hupri Road, adjacent to Kolhapur Airport in Maharashtra, India. This infrastructure is fully equipped with the unit wise division of execution managed by skilled and trained craftsmen. We make use of all the latest machinery and processes for the production of our furniture products. The centralization of infrastructure, process, manpower and resources helps us in standardization and to maintain the grade of the finished products at par with international standards.</p>
+          <p>
+            Kajave Furniture is well known to provide
+            <span
+              style="color:#9E866A"
+            >customized design solutions in traditional, ethnic, antique, contemporary and modern styles in solid wood.</span> With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress.
+          </p>
           <div class="shape">
             <div class="dot"></div>
             <div class="line"></div>
@@ -26,13 +31,8 @@
         </div>
         <div class="section-2">
           <p class="pfirst">Kajave Furniture is the fastest growing process driven branded Solid Wooden Furniture Manufacturer having a physical presence in Kolhapur, Satara and Pune in Maharashtra, India. Kajave Furniture has its multifarious lavish furniture showroom in Lonar Vasahat, Kolhapur which is spread over 7500 sq. ft of area.</p>
-          <p>We create, innovate and customize classy solid wood furniture. We offer a variety of exclusive versatile wooden home furniture ranging from beds and bedside tables to dining tables, chairs, center tables, wooden sofa sets, wardrobes, along with exclusively only customized pure solid wooden accessories to name a few. Customisation is only available in Kolhapur. </p>
-          <p>
-            Kajave Furniture is well known to provide
-            <span
-              style="color:#9E866A"
-            >customized design solutions in traditional, ethnic, antique, contemporary and modern styles in solid wood.</span> With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress.
-          </p>
+          <p>We create, innovate and customize classy solid wood furniture. We offer a variety of exclusive versatile wooden home furniture ranging from beds and bedside tables to dining tables, chairs, center tables, wooden sofa sets, wardrobes, along with exclusively only customized pure solid wooden accessories to name a few. Customisation is only available at Kolhapur showroom. </p>
+         
         </div>
         <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
         <div class="carousel-wrapper">
@@ -44,7 +44,7 @@
           </div>
         </div>
         <ProcessComponent/>
-        <p  style="color:#B04444; text-align:right; padding-right:16px"> *Customisation is only available in Kolhapur.</p>
+        <p  style="color:#B04444; text-align:right; padding-right:16px"> *Customisation is only available at Kolhapur showroom.</p>
         <div class="below-process">
           <p>To contribute and give back to the society in some positive way the management team at Kajave Furniture has donated books to students of a local government school. Such social initiatives are a regularly undertaken by the organization.</p>
           <br>

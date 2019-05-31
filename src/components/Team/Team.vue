@@ -31,14 +31,14 @@ export default {
     return {
       cards: [
         {
-          name: "MR. RAJESH M. KAJAVE (Founder & M.D)",
+          name: "MR. RAJESH M. KAJAVE (Founder)",
           img: require("../../assets/team/1.png"),
           p1: `Mr. Rajesh M. Kajave is the founder and Managing Director of KAJAVE FURNITURE. He envisioned the trustworthy brand ‘KAJAVE FURNITURE” in the year 2009 with a successful leap in the furniture industry.`,
           p2: `His immense knowledge and awareness in the furniture industry along with very professional and systematic management of the company affairs for over 10 years since commencement, has won him many repeat happy customers, appreciations and accolades.`,
           p3: `He firmly believes in the philosophy that furniture is not just about a product, it’s a true reflection of a person’s nature.`
         },
         {
-          name: "MRS. KAVITA R. KAJAVE (Director) ",
+          name: "MRS. KAVITA R. KAJAVE",
           p1: `She is our creative brain and heads all creative aspects in KAJAVE FURNITURE since inception. To add to it her caring and welcoming nature makes all our customers feel comfortable and at home. The foundations of happy relations are thereby built.`,
           img: require("../../assets/team/2.png")
         },
