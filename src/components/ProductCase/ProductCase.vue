@@ -45,16 +45,14 @@ export default {
           subtitle: "Chair",
           desc:
             "Oak veneered cabinet. Solid oak legs. One oak or white drawer. HProduct must be attached to the wall, the product have a readyness but not special fixing scrwes or dowels.",
-          img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FbRU1QXGZM6wC1v2VFznN_KDC02.webp?alt=media&token=05dd2e53-767e-460f-8642-12a692ef9253"
+          img: require("../../assets/ProductCase/111.webp")
         },
         {
           title: "KSO 19",
           subtitle: "Sofa",
           desc:
             "Oak veneered cabinet. Solid oak legs. One oak or white drawer. HProduct must be attached to the wall, the product have a readyness but not special fixing scrwes or dowels.",
-          img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FBM92bA1jmyt8AU3AxnYZ_KSO19.webp?alt=media&token=c1d1b1d7-f222-4965-93fb-b92cc1eca90f"
+          img: require("../../assets/ProductCase/333.webp")
         },
 
         {
@@ -62,16 +60,14 @@ export default {
           subtitle: "Indian Sitting",
           desc:
             "Oak veneered cabinet. Solid oak legs. One oak or white drawer. HProduct must be attached to the wall, the product have a readyness but not special fixing scrwes or dowels.",
-          img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2F0W938KFLmZ7ozrqZf5KO_KISO02.webp?alt=media&token=94d24043-50de-405f-8d7d-182e06892067"
+          img: require("../../assets/ProductCase/444.webp")
         },
         {
           title: "KDC 07",
           subtitle: "Chair",
           desc:
             "Oak veneered cabinet. Solid oak legs. One oak or white drawer. HProduct must be attached to the wall, the product have a readyness but not special fixing scrwes or dowels.",
-          img:
-            "https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FXrPCwdGEJlCB6zRXkauG_KDC07.webp?alt=media&token=906a13f0-3302-4b10-881a-a3642c42eba1"
+          img: require("../../assets/ProductCase/222.webp")
         }
       ],
       currentProduct: 0
