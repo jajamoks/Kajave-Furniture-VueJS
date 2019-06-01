@@ -20,10 +20,10 @@
       <div class="social">
         <!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
         <!-- <i class="fa fa-google-plus" aria-hidden="true"></i> -->
-        <a target="_blank" href="https://www.facebook.com/kajavefurniturekop/">
+        <a target="_blank" href="https://www.facebook.com/kajavefurniturekop">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/kajavefurniturekolhapur/?hl=en" target="_blank">
+        <a href="https://www.instagram.com/kajavefurniturekolhapur/" target="_blank">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </div>

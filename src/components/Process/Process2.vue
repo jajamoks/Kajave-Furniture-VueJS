@@ -42,12 +42,12 @@ export default {
       selectedProduct: 0,
       loading: false,
       processList: [
-        require("../../assets/process/1.jpg"),
-        require("../../assets/process/2.jpg"),
+        require("../../assets/process/sketch-1.webp"),
+        require("../../assets/process/sketch-2.webp"),
         require("../../assets/process/3.jpg"),
-        require("../../assets/process/4.jpg"),
-        require("../../assets/process/5.jpg"),
-        require("../../assets/process/6.jpg")
+        require("../../assets/process/machine.webp"),
+        require("../../assets/process/factory.webp"),
+        'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2Fk82lRr8g4LArgIGbmYT4_UT7A1218.webp?alt=media&token=3659f9f8-16fe-45d0-9517-3cc326939f06'
       ]
     };
   },

@@ -21,7 +21,15 @@
         <h1 class="heading">About Us</h1>
         <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
         <div class="section-1">
-          <img src="../assets/about/aboutimg.webp" alt>
+          <img  :src="loading == false ? shopPics[currentPic] :`https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif` " @load="loaded">
+          <div class="nav-a">
+          <div class="btn l" @click="slideIt('prev')">
+            <div class="line"></div>
+          </div>
+          <div class="btn r" @click="slideIt('next')">
+            <div class="line"></div>
+          </div>
+        </div>
           <p>
             Envisioned and Founded by Mr. Rajesh Maruti Kajave in the year 2010 with an honest initiative to provide
             <span
@@ -80,8 +88,37 @@ export default {
     FooterForm,
     ProcessComponent
   },
+  data(){
+    return{
+      shopPics:[
+        require('../assets/about/aboutimg.webp'),
+        require('../assets/about/shop2.webp'),
+        require('../assets/about/shop3.webp'),
+
+      ],
+      currentPic:0,
+      loading:false
+    }
+  },
   mounted() {
     window.scrollTo(0, 0);
+  },
+  methods: {
+    slideIt: function(type) {
+      this.loading = true;
+      if (type === "prev") {
+        this.currentPic == 0
+          ? (this.currentPic = this.shopPics.length - 1)
+          : this.currentPic--;
+      } else {
+        this.currentPic == this.shopPics.length - 1
+          ? (this.currentPic = 0)
+          : this.currentPic++;
+      }
+    },
+    loaded: function() {
+      this.loading = false;
+    }
   }
 };
 </script>
@@ -202,8 +239,101 @@ export default {
     padding: 20px;
 
     img {
-      margin-bottom: 20px;
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      @include for-phone-only{
+        height: 200px;
+      }
     }
+
+    .nav-a {
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        @include for-tablet-portrait-up {
+          height: 96px;
+          padding-right: 16px;
+        }
+
+        @include for-phone-only{
+          padding : 16px 0;
+          justify-content: center;
+        }
+
+        .btn {
+          width: 48px;
+          height: 48px;
+          border: 1px solid transparent;
+          margin: 0 8px;
+          background: #c4a989;
+          position: relative;
+          cursor: pointer;
+
+          .line {
+            width: 20px;
+            height: 1px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+          }
+        }
+
+        .btn:hover {
+          background: #ffeed3;
+          border: 1px solid black;
+          transition: 0.3s ease all;
+
+          .line {
+            transition: 0.3s ease all;
+          }
+
+          .line::after {
+            transition: 0.3s ease all;
+          }
+        }
+
+        .l {
+          .line {
+            transform: translate(-50%, 0);
+            left: 50%;
+          }
+          .line::after {
+            content: "";
+            border: 1px solid black;
+            border-right: none;
+            border-bottom: none;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            left: 0;
+            transform: translateY(-50%) rotateZ(-45deg);
+            transform-origin: center;
+          }
+        }
+
+        .r {
+          .line {
+            transform: translate(-50%, 0);
+            left: 50%;
+          }
+          .line::after {
+            content: "";
+            border: 1px solid black;
+            border-left: none;
+            border-top: none;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotateZ(-45deg);
+            transform-origin: center;
+          }
+        }
+      }
 
     p {
       text-align: justify;
