@@ -97,7 +97,7 @@ export default {
       selectedImg: 0,
       zoomerShown: false,
       productImages: [],
-      productDesc: `Oak veneered table top with solid oak legs, two oak drawers with brass knobs. Drawer inside measurements are W202/D550/H54mm. Drawers are without rails (classical drawers). At rear of table top there is one brass coated hole for cables.`,
+      productDesc: ``,
       productDimen: "as per your requirement",
       polishTypes: [
         {
@@ -202,6 +202,7 @@ export default {
       });
 
       this.productName = product.name;
+      this.productDesc = product.description;
       product.imgs.forEach(imgRef => {
         app.storage
           .getURL({
