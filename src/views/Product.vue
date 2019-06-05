@@ -25,7 +25,7 @@
       <div class="details">
         <h1>{{productName}}</h1>
         <p>{{productDesc}}</p>
-        <h4>Dimensions : As Per Your Requirement</h4>
+        <!-- <h4>Dimensions : As Per Your Requirement</h4> -->
         <div class="polish">
           <h4>Available Polish Type :</h4>
           <ul>
