@@ -4,7 +4,7 @@ exports.handler = function(event, context, callback) {
 	// your server-side functionality
 
 	const API_KEY =
-		"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";
+		process.env.MAIL_API_KEY;
 
 	const headers = {
 		"Access-Control-Allow-Origin": "*", // better change this for production
