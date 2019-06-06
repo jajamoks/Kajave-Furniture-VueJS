@@ -4,7 +4,7 @@
     <div class="form">
       <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="contact">
-         <input name="bot-field" hidden />
+        <input name="bot-field" hidden>
         <md-field md-theme="kajave">
           <label>Name</label>
           <md-input name="User Name" v-model="name" required></md-input>
@@ -29,13 +29,12 @@
         <button @click="submitForm" class="submit">Submit</button>
       </form>
     </div>
-    
+
     <p class="copyright">Kajave Furniture | Copyright {{date}}</p>
   </div>
 </template>
 
 <script>
-import axios from "axios";
 export default {
   name: "ContactForm",
   data() {
@@ -49,32 +48,35 @@ export default {
   },
   methods: {
     submitForm: function() {
-      // this.sendEnquiry();
+      event.preventDefault();
+      this.submitToServer().then((response)=>{
+         const body = response.json();
+        if (Number(response.status) !== 200) {
+          console.log('Error submitting the form.')
+        } else {
+          console.log('Form was submitted!')
+        }
+      })
     },
-    sendEnquiry: function() {
+    submitToServer() {
       const data = {
         name: this.name,
         email: this.email,
         message: this.message,
         city: this.city
       };
-      const url =
-        "https://stark-beach-94218.herokuapp.com/postman/0470f7c061b805bf270c0521897aede251d652a83fb6b696a9819f195f3c6aec";
-      axios
-        .post(url, data)
-        .then(res => {
-          console.log("RESPONSE", res);
-          if (res.data === "SUCCESS") {
-            this.name = "";
-            this.city = "";
-            this.email = "";
-            this.message = "";
-          } else {
-          }
+      return new Promise((resolve, reject) => {
+        fetch(`${process.env.functions}/notify`, {
+          method: "POST",
+          body: JSON.stringify(data)
         })
-        .catch(err => {
-          console.log("ERR", err);
-        });
+          .then(response => {
+            resolve(response);
+          })
+          .catch(err => {
+            reject(err);
+          });
+      });
     }
   }
 };

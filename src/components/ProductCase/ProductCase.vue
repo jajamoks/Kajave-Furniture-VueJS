@@ -130,6 +130,8 @@ export default {
       flex-direction: column;
       justify-content: center;
 
+     
+
       hr {
         @include for-tablet-portrait-up {
           display: none;
