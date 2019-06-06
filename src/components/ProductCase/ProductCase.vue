@@ -35,7 +35,7 @@ export default {
       products: [
         {
           title: "KCT 09",
-          subtitle: "Bed & Bedsides",
+          subtitle: "Center Table",
           desc:
             "This piece is well crafted in tenon and mortise joints made in seasoned white beech wood. Hand painted tiles on one side and drawers on the other, is a best example of aesthetic and functionality. It is in walnut finish.",
           img: require("../../assets/ProductCase/table.png")
