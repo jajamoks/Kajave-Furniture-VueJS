@@ -66,7 +66,7 @@ export default {
         city: this.city
       };
       return new Promise((resolve, reject) => {
-        fetch(`${process.env.functions}/notify`, {
+        fetch(`.netlify/functions/notify`, {
           method: "POST",
           body: JSON.stringify(data)
         })
