@@ -4,8 +4,7 @@
     <img class="lines_dot" src="../../assets/Categories/lines_dot.png">
     <div class="proc-flex">
       <div class="lf">
-        <img  :src="loading == false ? processList[selectedProduct] :`https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif` " @load="loaded">
-        <!-- <img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif"> -->
+        <img  :src="loading == false ? processList[selectedProduct] : loadingImage " @load="loaded">
         <div class="nav-area">
           <div class="btn l" @click="slideIt('prev')">
             <div class="line"></div>
@@ -41,6 +40,7 @@ export default {
     return {
       selectedProduct: 0,
       loading: false,
+      loadingImage:require('../../assets/loading.gif'),
       processList: [
         require("../../assets/process/sketch-1.webp"),
         require("../../assets/process/sketch-2.webp"),

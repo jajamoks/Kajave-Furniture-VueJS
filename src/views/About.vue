@@ -21,7 +21,7 @@
         <h1 class="heading">About Us</h1>
         <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
         <div class="section-1">
-          <img  :src="loading == false ? shopPics[currentPic] :`https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif` " @load="loaded">
+          <img  :src="loading == false ? shopPics[currentPic] :loadingImg " @load="loaded">
           <div class="nav-a">
           <div class="btn l" @click="slideIt('prev')">
             <div class="line"></div>
@@ -86,10 +86,11 @@ export default {
     Carousel,
     Team,
     FooterForm,
-    ProcessComponent
+    ProcessComponent,
   },
   data(){
     return{
+      loadingImg:require('../assets/loading.gif'),
       shopPics:[
         require('../assets/about/aboutimg.webp'),
         require('../assets/about/shop2.webp'),
