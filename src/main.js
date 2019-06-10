@@ -5,6 +5,9 @@ import store from './store'
 import Sticky from 'vue-sticky-directive'
 import VueZoomer from 'vue-zoomer'
 import 'vue-zoomer/dist/vue-zoomer.css'
+import Toasted from 'vue-toasted';
+
+Vue.use(Toasted)
 
 import { MdField,MdProgress,MdList,MdMenu} from 'vue-material/dist/components';
 import 'vue-material/dist/vue-material.min.css'

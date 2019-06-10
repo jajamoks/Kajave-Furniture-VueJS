@@ -49,14 +49,39 @@ export default {
   methods: {
     submitForm: function() {
       event.preventDefault();
-      this.submitToServer().then((response)=>{
-         const body = response.json();
-        if (Number(response.status) !== 200) {
-          console.log('Error submitting the form.')
-        } else {
-          console.log('Form was submitted!')
-        }
-      })
+      if (
+        this.email == "" ||
+        this.message == "" ||
+        this.city ||
+        this.name == ""
+      ) {
+        this.$toasted.show("Fields Cannot Be Empty", {
+          theme: "toasted-primary",
+          type: "error",
+          position: "bottom-right",
+          fitToScreen:true,
+          duration: 2000
+        });
+      } else {
+        this.submitToServer()
+          .then(response => {
+            const body = response.json();
+            this.$toasted.show("Fields Cannot Be Empty", {
+              theme: "toasted-primary",
+              type: "success",
+              position: "bottom-right",
+              duration: 2000
+            });
+          })
+          .catch(() => {
+            this.$toasted.show("Fields Cannot Be Empty", {
+              theme: "toasted-primary",
+              type: "error",
+              position: "bottom-right",
+              duration: 2000
+            });
+          });
+      }
     },
     submitToServer() {
       const data = {

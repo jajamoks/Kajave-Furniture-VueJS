@@ -56,14 +56,7 @@ export default {
         },
         {
           name: "Mr. Nilesh Hankare",
-          message:`Kajave manje kolhapur madhil ek 100% quality,
-            Guarantee furniture Denare Dalan, Mi Tyanchyakadun
-            Mazya New Hotel sathi Furniture Purchase kele Mazya
-            hotel la Sunder Gateup aala Mazyakade yenarya 200
-            te 300 coustemer ne inquiry kele ki he furniture
-            kuthun ghetale Sagalyna Avadale aahe Tasech Kajave
-            Furniture order velet purn karun detat ,Mala Avadale
-            Tumala hi Avadel`,
+          message:`काजवे म्हणजे कोल्हापूर मधील एक १००% क्वालिटी, गॅॅरंटी फर्निचर देणारे दालन. मी त्यांच्याकडून माझ्या नवीन हॉटेलसाठी फर्निचर विकत घेतले. माझ्या हॉटेलला सुंदर गेटअप आला. माझ्याकडे येणाऱ्या २०० ते ३०० ग्राहकानी विचारणा केली कि हे फर्निचर कोठून घेतले आहे. सर्वाना इतके आवडले आहे. तसेच काजवे फर्निचर ऑर्डर वेळेत पूर्ण करून देतात. मला आवडले तुम्हालाही आवडेल.`,
           img: require("../../assets/Testimonials/nilesh.jpeg")
         },
         {
