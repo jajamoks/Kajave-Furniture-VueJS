@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.png">
-    <title>Kajave Furniture</title>
-    <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="icon" href="<%= BASE_URL %>favicon.png" />
+		<title>Kajave Furniture</title>
+		<meta
+			name="description"
+			content="Kajave Furniture is well known to provide customized design solutions in traditional, ethnic antique, contemporary and modern styles in solid wood. With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress."
+		/>
+		<meta
+			name="keywords"
+			content="Furniture,Best Furniture,Kajave Furniture,Buy Furniture in kolhapur, Custom Furniture,Custom Design Furniture In Kolhapur,Branded Furniture In Kolhapur,Furniture Showroom in kolhapur"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600,700"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141761310-1"></script>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-141761310-1"
+		></script>
 
-<script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
 
-  window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
 
-  function gtag(){dataLayer.push(arguments);}
+			gtag("js", new Date());
 
-  gtag('js', new Date());
-
-
-  gtag('config', 'UA-141761310-1');
-
-</script>
-  </head>
-  <body>
-    <form name="contact" method="POST" data-netlify="true" hidden >
-      <input type="text" name="User Name">
-      <input type="text" name="Email" >
-      <select name="City"></select>
-      <textarea name="Message"></textarea>
-    </form>
-    <noscript>
-      <strong>We're sorry but vue-kajave doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-   
-  </body>
+			gtag("config", "UA-141761310-1");
+		</script>
+	</head>
+	<body>
+		<form name="contact" method="POST" data-netlify="true" hidden>
+			<input type="text" name="User Name" />
+			<input type="text" name="Email" />
+			<select name="City"></select>
+			<textarea name="Message"></textarea>
+		</form>
+		<noscript>
+			<strong
+				>We're sorry but vue-kajave doesn't work properly without JavaScript
+				enabled. Please enable it to continue.</strong
+			>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
 </html>
