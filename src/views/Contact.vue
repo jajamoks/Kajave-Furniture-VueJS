@@ -28,9 +28,9 @@
       </div>
     </div>
     <div class="email">
-      <span>
-        <i class="fa fa-envelope" aria-hidden="true"></i> Kajave.indu@gmail.com
-      </span>
+      <!-- <span>
+        <i class="fa fa-envelope" aria-hidden="true"></i> kajave.indu@gmail.com
+      </span> -->
     </div>
     <FormFooter/>
     <Footer/>
