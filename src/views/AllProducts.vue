@@ -57,7 +57,7 @@ export default {
           route:'chairs'
         },
         {
-          img: require("../assets/Categories/dining.jpg"),
+          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FgsBAv7MM5GwsStNv45U9_UT7A1554%20ok.webp?alt=media&token=d4267612-599d-409c-956c-96f3445bf00e',
           title: "DINING",
           route:'dining'
         },

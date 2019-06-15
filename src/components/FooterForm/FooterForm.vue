@@ -20,10 +20,10 @@
       <div class="social">
         <!-- <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
         <!-- <i class="fa fa-google-plus" aria-hidden="true"></i> -->
-        <a target="_blank" href="https://www.facebook.com/kajavefurniturekop">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/kajavefurniturekop">
           <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/kajavefurniturekolhapur/" target="_blank">
+        <a rel="noreferrer" href="https://www.instagram.com/kajavefurniturekolhapur/" target="_blank">
           <i class="fa fa-instagram" aria-hidden="true"></i>
         </a>
       </div>
@@ -39,7 +39,7 @@
       </ul>
       <div class="info">
         <p>
-          <span style="color:#9E866A; font-weight:500">Email:</span>kajavefurniture@gmail.com
+          <!-- <span style="color:#9E866A; font-weight:500">Email:</span>kajavefurniture@gmail.com -->
         </p>
         <p>
           <span style="color:#9E866A; font-weight:500">Address:</span> 9/1/3, Lonar vasahat, Near Menon and Menon, Kolhapur, Maharashtra 416005

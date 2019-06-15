@@ -40,7 +40,7 @@ export default {
         {
           name: "MRS. KAVITA R. KAJAVE",
           p1: `She is our creative brain and heads all creative aspects in KAJAVE FURNITURE since inception. To add to it her caring and welcoming nature makes all our customers feel comfortable and at home. The foundations of happy relations are thereby built.`,
-          img: require("../../assets/team/2.png")
+          img: require("../../assets/team/mom.webp")
         },
         {
           name: "AR. MRUNAL V. KAJAVE",
@@ -141,6 +141,7 @@ export default {
     width: 178px;
     height: 178px;
     z-index: 1;
+    border-radius: 50%;
     @include for-phone-only {
       width: 130px;
       height: 130px;

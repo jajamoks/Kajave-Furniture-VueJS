@@ -1,6 +1,6 @@
 <template>
   <div id="footer">
-    <div class="flex">
+    <div @click="showAllProducts" class="flex">
       <h4>SHOW ALL PRODUCTS</h4>
       <img src="../../assets/Footer/footer_arrow.png" alt="">
     </div>
@@ -10,6 +10,11 @@
 <script>
 export default {
   name:'FooterComponent',
+  methods:{
+    showAllProducts:function(){
+      this.$router.push('/allproducts')
+    }
+  }
 
 }
 </script>

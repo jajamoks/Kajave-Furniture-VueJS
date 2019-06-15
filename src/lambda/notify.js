@@ -37,7 +37,7 @@ exports.handler = function(event, context, callback) {
 	//send the email
 	sgMail.setApiKey(API_KEY);
 	const msg = {
-		to: "itachimessi10@gmail.com",
+		to: "veerenkajave04@gmail.com",
 		from: "FormecMedia-noreply@formecmedia.com",
 		subject: "Your Website Has New Form Submission!",
 		text: `Details of the forms are below: \n\nUser Name:${payload.name}\n\nEmail:${payload.email}\n\nCity:${payload.city}\nMessage:${payload.message}`

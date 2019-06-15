@@ -4,11 +4,11 @@
         <div v-for="category in categories" :key="category.title" :style='{ backgroundImage: `url(${category.img})` }'  class="card" @click="showProducts(category)" >
         <div class="text-box">
           <p class="title">{{category.title}}</p>
-          <img class="lines_dot" src="../../assets/Categories/lines_dot.png" alt="">
+          <img class="lines_dot" src="../../assets/Categories/lines_dot.png" >
         </div>
       </div>
      <div class="showall" @click="navToAllProducts">
-        <p>Show All Products  <img src="../../assets/right_arrow.png" alt=""> </p>
+        <p>Show All Products  <img src="../../assets/right_arrow.png" > </p>
      </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ export default {
           route:'chairs'
         },
          {
-          img:require('../../assets/Categories/dining.jpg'),
+          img:'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FgsBAv7MM5GwsStNv45U9_UT7A1554%20ok.webp?alt=media&token=d4267612-599d-409c-956c-96f3445bf00e',
           title:'DINING',
           route:'dining'
         },
