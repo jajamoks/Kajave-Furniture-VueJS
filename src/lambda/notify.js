@@ -3,6 +3,10 @@ const sgMail = require('@sendgrid/mail');
 exports.handler = function(event, context, callback) {
 	// your server-side functionality
 
+	// EMAILS
+	// kolhapur@kajavefurniture.com
+
+
 	const API_KEY =
 		process.env.MAIL_API_KEY;
 
@@ -37,11 +41,26 @@ exports.handler = function(event, context, callback) {
 	//send the email
 	sgMail.setApiKey(API_KEY);
 	const msg = {
-		to: "veerenkajave04@gmail.com",
-		from: "FormecMedia-noreply@formecmedia.com",
+		to: ['kolhapur@kajavefurniture.com'],
+		from: "WebSubmission@formecmedia.com",
 		subject: "Your Website Has New Form Submission!",
-		text: `Details of the forms are below: \n\nUser Name:${payload.name}\n\nEmail:${payload.email}\n\nCity:${payload.city}\nMessage:${payload.message}`
+		text: `Submission Details: \n\nUser Name: ${payload.name}\n\nEmail: ${payload.email}\n\nCity: ${payload.city}\n\nMessage: ${payload.message}`
 	};
+
+	switch (payload.city) {
+		case 'Pune':
+			msg.to.push('pune@kajavefurniture.com')
+			break;
+		case 'Satara':
+			msg.to.push('satara@kajavefurniture.com')
+			break;
+		default:
+			break;
+	}
+
+
+
+
 	sgMail.send(msg).then(()=>{
 		return callback(null, {
 			statusCode: 200,

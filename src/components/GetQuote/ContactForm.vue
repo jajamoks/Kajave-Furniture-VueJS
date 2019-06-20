@@ -52,7 +52,7 @@ export default {
       if (
         this.email == "" ||
         this.message == "" ||
-        this.city ||
+        this.city == "" ||
         this.name == ""
       ) {
         this.$toasted.show("Fields Cannot Be Empty", {
@@ -66,7 +66,7 @@ export default {
         this.submitToServer()
           .then(response => {
             const body = response.json();
-            this.$toasted.show("Fields Cannot Be Empty", {
+            this.$toasted.show("Thank you for contacting us!", {
               theme: "toasted-primary",
               type: "success",
               position: "bottom-right",
