@@ -26,7 +26,9 @@
           <label>Textarea</label>
           <md-textarea required name="Message" v-model="message"></md-textarea>
         </md-field>
-        <button @click="submitForm" class="submit">Submit</button>
+        <button @click="submitForm"  class="submit">Submit
+          <i v-if="sending" :class="[{sending:sending}]" class="fa fa-circle-o-notch fa-spin"></i>
+        </button>
       </form>
     </div>
 
@@ -43,7 +45,8 @@ export default {
       email: "",
       message: "",
       date: new Date().getFullYear(),
-      city: ""
+      city: "",
+      sending:false
     };
   },
   methods: {
@@ -63,10 +66,12 @@ export default {
           duration: 2000
         });
       } else {
+        this.sending = true;
         this.submitToServer()
           .then(response => {
+            this.sending = false;
             const body = response.json();
-            this.$toasted.show("Thank you for contacting us!", {
+            this.$toasted.show("Thank you for contacting us! We will respond you as soon.", {
               theme: "toasted-primary",
               type: "success",
               position: "bottom-right",
@@ -74,6 +79,7 @@ export default {
             });
           })
           .catch(() => {
+            this.sending = false;
             this.$toasted.show("Fields Cannot Be Empty", {
               theme: "toasted-primary",
               type: "error",
@@ -108,6 +114,10 @@ export default {
 </script>
 
 <style lang="scss" scopped>
+
+.sending{
+  margin-left: 8px;
+}
 .md-menu-content-container {
   width: 100%;
 }
