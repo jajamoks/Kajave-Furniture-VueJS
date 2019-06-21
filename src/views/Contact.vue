@@ -23,6 +23,8 @@
             <p v-if="item.landline">{{item.landline}}</p>
             <p v-if="item.mobile">{{item.mobile}}</p>
             <p v-if="item.mobile2">{{item.mobile2}}</p>
+            <hr>
+            <a :href="'mailto:'+item.email" target="_top">{{item.email}}</a>
           </div>
         </div>
       </div>
@@ -55,7 +57,8 @@ export default {
           p2: "Near Menon and Menon,",
           p3: " Kolhapur 416005",
           landline: `0231-2665525`,
-          mobile: `9822453544`
+          mobile: `9822453544`,
+          email:'kolhapur@kajavefurniture.com'
         },
         {
           city: "Satara:",
@@ -64,7 +67,8 @@ export default {
           p2: "Near Hotel Pranjali, NH4,Khed Chowk,",
           p3: "Satara 415003",
           mobile2: `9595254747`,
-          mobile: `9822072080`
+          mobile: `9822072080`,
+          email:'satara@kajavefurniture.com'
         },
         {
           city: "Pune:",
@@ -73,7 +77,8 @@ export default {
             "Tiny Industrial Cooperative Estate Ltd, Plot No-3 & 4, Kondhwa Pisoli Road, Kondhwa Budrukh,",
           p3: "Near Khadi Machine Chowk",
           p4:' Pune-411048',
-          mobile: `7020331895`
+          mobile: `7020331895`,
+          email:'pune@kajavefurniture.com'
         }
       ]
     };
@@ -193,6 +198,7 @@ export default {
       }
     }
   }
+  
 
   .email {
     background: #f1f1f1;
@@ -210,4 +216,10 @@ export default {
     }
   }
 }
+ a {
+    color: #3c3c3c;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 </style>
