@@ -52,7 +52,7 @@ export default {
 
         {
           img: require("../assets/Categories/chair.jpg"),
-          tittle: "CHAIRS",
+          title: "CHAIRS",
           route: "chairs"
         },
         {
