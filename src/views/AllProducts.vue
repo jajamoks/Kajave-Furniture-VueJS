@@ -29,7 +29,6 @@
       </div>
     </div>
     <FormFooter/>
-    <Footer/>
   </div>
 </template>
 
@@ -101,6 +100,7 @@ export default {
   width: 100%;
   padding-top: 1px;
   position: relative;
+
 
   .text-1 {
     font-size: 12px;
