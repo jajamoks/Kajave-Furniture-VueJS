@@ -92,9 +92,9 @@ export default {
     return{
       loadingImg:require('../assets/loading.gif'),
       shopPics:[
-        require('../assets/about/aboutimg.webp'),
-        require('../assets/about/shop2.webp'),
-        require('../assets/about/shop3.webp'),
+        require('../assets/about/aboutimg.jpg'),
+        require('../assets/about/shop2.jpg'),
+        require('../assets/about/shop3.jpg'),
 
       ],
       currentPic:0,
@@ -188,8 +188,17 @@ export default {
       }
 
       .box {
-        padding: 80px 59px 119px 70px;
+        
         position: relative;
+        
+
+        @include for-tablet-portrait-up{
+          padding: 16px;
+        }
+
+        @include for-desktop-up{
+          padding: 80px 59px 119px 70px;
+        }
 
         p {
           margin-top: 16px;
@@ -199,6 +208,16 @@ export default {
           text-align: right;
           color: #8a8a8a;
           position: relative;
+
+          @include for-tablet-portrait-up{
+            margin-top: 80px;
+            font-size: 18px;
+            line-height: 24px;
+          }
+
+          @include for-desktop-up{
+            margin-top: 16px;
+          }
         }
 
         .shape {
@@ -245,6 +264,12 @@ export default {
       object-fit: cover;
       @include for-phone-only{
         height: 200px;
+      }
+      @include for-tablet-portrait-up{
+        height: 350px;
+      }
+      @include for-desktop-up{
+        height: 500px;
       }
     }
 

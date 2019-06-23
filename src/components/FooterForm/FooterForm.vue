@@ -29,7 +29,7 @@
       </div>
       <div class="bni-mem">
         <div class="line l"></div>
-        <img class="bni" src="../../assets/brand/bni.webp">
+        <img class="bni" src="../../assets/brand/bni.png">
         <div class="line r"></div>
       </div>
       <ul>
@@ -45,6 +45,10 @@
           <span style="color:#9E866A; font-weight:500">Address:</span> 9/1/3, Lonar vasahat, Near Menon and Menon, Kolhapur, Maharashtra 416005
         </p>
         <p class="copyright">Kajave Furniture | Copyright {{date}}</p>
+      </div>
+      <div class="formec" style="margin-bottom:12px;">
+        <span style="color:grey;">Designed with <i class="fa fa-heart" aria-hidden="true" style="color:hotpink"></i> by <a target="_blank" href="https://www.formecmedia.com" style="color:aqua">Formec Media.</a>
+      </span>
       </div>
     </div>
   </div>

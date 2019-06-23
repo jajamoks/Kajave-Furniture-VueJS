@@ -46,41 +46,41 @@ export default {
     return {
       categories: [
         {
-          img: require("../assets/Categories/sofa.webp"),
+          img: require("../assets/Categories/sofa.jpg"),
           title: "SOFAS",
-          route:'sofas'
+          route: "sofas"
         },
-        
+
         {
-          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FelZeMjVsu8KDFD7cId88_UT7A0650ok.webp?alt=media&token=35fece62-0f01-4ebf-880f-e6f66628e18f',
-          title: "CHAIRS",
-          route:'chairs'
+          img: require("../assets/Categories/chair.jpg"),
+          tittle: "CHAIRS",
+          route: "chairs"
         },
         {
-          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FgsBAv7MM5GwsStNv45U9_UT7A1554%20ok.webp?alt=media&token=d4267612-599d-409c-956c-96f3445bf00e',
+          img: require("../assets/Categories/dining.jpg"),
           title: "DINING",
-          route:'dining'
+          route: "dining"
         },
         {
-          img: require("../assets/Categories/ct.webp"),
+          img: require("../assets/Categories/ct.jpg"),
           title: "Center Table",
-          route:'centertable'
+          route: "centertable"
         },
         {
-          img: 'https://firebasestorage.googleapis.com/v0/b/kajave-furniture.appspot.com/o/flamelink%2Fmedia%2FrJfv76E1GfTwNMDuL8Eg_UT7A1387ok.webp?alt=media&token=874b3879-3f18-459c-a51e-b62454f0b38c',
+          img: require("../assets/Categories/bed.jpg"),
           title: "BEDS",
-          route:'beds'
-        }, 
-        
+          route: "beds"
+        },
+
         {
-          img: require("../assets/Categories/cabinets.webp"),
+          img: require("../assets/Categories/cod.jpg"),
           title: "Chest Of Drawers",
-          route:'chestofdrawers'
+          route: "chestofdrawers"
         },
         {
-          img: require("../assets/Categories/ind_sitting.webp"),
+          img: require("../assets/Categories/ind_sit.jpg"),
           title: "Indian Siting",
-          route:'indiansitting'
+          route: "indiansitting"
         }
       ]
     };
@@ -90,8 +90,8 @@ export default {
       this.$router.push(`/products/${type.route}`);
     }
   },
-  mounted(){
-    window.scrollTo(0,0);
+  mounted() {
+    window.scrollTo(0, 0);
   }
 };
 </script>
@@ -106,9 +106,9 @@ export default {
     font-size: 12px;
     font-weight: 600;
     padding: 8px 0;
-    @include for-tablet-portrait-up{
-        display: none;
-      }
+    @include for-tablet-portrait-up {
+      display: none;
+    }
   }
 
   .dual-view {
@@ -127,17 +127,31 @@ export default {
       }
 
       .box {
-        padding: 119px 59px 119px 70px;
         position: relative;
 
+        @include for-tablet-portrait-up {
+          padding: 16px;
+          padding-top: 80px;
+        }
+
+        @include for-desktop-up {
+          padding: 80px 59px 80px 70px;
+        }
+
         p {
-          margin-top: 20px;
           font-weight: 300;
-          font-size: 20px;
-          line-height: 27px;
           text-align: right;
           color: #8a8a8a;
           position: relative;
+
+          @include for-tablet-portrait-up {
+            font-size: 18px;
+          }
+
+          @include for-desktop-up {
+            line-height: 27px;
+            font-size: 20px;
+          }
         }
 
         .shape {
@@ -249,7 +263,5 @@ export default {
       bottom: 10px;
     }
   }
-
- 
 }
 </style>

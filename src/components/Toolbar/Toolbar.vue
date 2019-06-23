@@ -155,7 +155,7 @@ export default {
   @import "menu-btn";
 
   .logo {
-    background-image: url("../../assets/brand/nav-logo.png");
+    background-image: url("../../assets/brand/logo.png");
     width: 110px;
     height: 41px;
     background-size: contain;

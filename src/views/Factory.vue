@@ -15,7 +15,7 @@
         <h1 class="heading">Factory</h1>
         <img class="lines_dot" src="../assets/Categories/lines_dot.png" alt>
         <div class="section-1">
-          <img src="../assets/factory/factory.webp" alt>
+          <img src="../assets/factory/factory.jpg" alt>
           <p>Our team of dedicated experts consists of experienced professional designers, skilled craftsmen, carpenters, quality control team, sales &amp; marketing associates, material dispatch team and customer care executives. All our team members are regularly trained and groomed to ensure that they are all updated with the knowledge of latest designs, patterns, trends, types of equipment and essential know-how about our industry.</p>
           <br>
           <p>We ensure all compliances and statutory safety standards in our work environment. We do not employ child labor as per Govt. of Maharashtra, India directives. In order to keep our team members constantly motivated to perform and deliver, our management at regular intervals acknowledges their efforts and initiatives.</p>
@@ -61,7 +61,7 @@
           </div>
           <br>
           <hr style="margin: 0 20px;">
-          <p>We make use of European beech wood for various furniture requirements of our clients. Our target audience for solid wooden furniture is of all age groups spread across all income groups. We offer the facility of buying furniture on finance through association with Bajaj Capital.</p>
+          <p>We make use of European beech wood for various furniture requirements of our clients. Our target audience for solid wooden furniture is of all age groups spread across all income groups. We offer the facility of buying furniture on finance through association with Bajaj Finserv.</p>
           <div class="imgs" style="justify-content:flex-end;">
             <img src="../assets/factory/3.jpg" alt>
             <img style="margin-left:16px" src="../assets/factory/4.jpg" alt>
@@ -170,16 +170,33 @@ export default {
       }
 
       .box {
-        padding: 90px 59px 119px 70px;
         position: relative;
+
+        @include for-tablet-portrait-up {
+          padding: 16px;
+          padding-top: 90px;
+        }
+
+        @include for-desktop-up {
+          padding: 90px 59px 119px 70px;
+        }
 
         p {
           font-weight: 300;
-          font-size: 20px;
-          line-height: 27px;
+
           text-align: right;
           color: #8a8a8a;
           position: relative;
+
+          @include for-tablet-portrait-up {
+            font-size: 18px;
+            line-height: 22px;
+          }
+
+          @include for-desktop-up {
+            line-height: 27px;
+            font-size: 20px;
+          }
         }
 
         .shape {
@@ -364,11 +381,12 @@ export default {
       padding-bottom: 32px;
       margin: 16px 0;
       position: relative;
+
       @include for-phone-only {
         width: 100%;
       }
 
-      @include for-tablet-portrait-up {
+      @include for-desktop-up {
         width: 45%;
         height: 230px;
       }
@@ -439,19 +457,37 @@ export default {
       justify-content: center;
       margin: 24px 0;
 
+      @include for-tablet-portrait-up{
+        flex-wrap: wrap;
+      }
+
+      @include for-desktop-up{
+        flex-wrap: nowrap;
+      }
+
+      
+
       img {
-        max-height: 300px;
+        max-height: 280px;
         margin: 8px;
+
+        @include for-desktop-up {
+          max-height: 300px;
+          margin: 8px;
+        }
       }
 
       p {
         text-align: left;
         margin: 8px;
         font-weight: normal;
-        line-height: 24px;
         color: #3c3c3c;
         margin: 2px 16px;
-        font-size: 18px;
+
+        @include for-desktop-up {
+          line-height: 24px;
+          font-size: 18px;
+        }
       }
     }
   }

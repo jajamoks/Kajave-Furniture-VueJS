@@ -90,10 +90,13 @@ export default {
     display: flex;
     flex-direction: column;
 
-    @include for-tablet-portrait-up{
+    @include for-tablet-portrait-up{      
+      padding-left: 64px;  
+      max-height: 500px;
+    }
+
+    @include for-desktop-up{
       max-height: 428px;
-      padding-left: 64px;
-      
     }
   
     

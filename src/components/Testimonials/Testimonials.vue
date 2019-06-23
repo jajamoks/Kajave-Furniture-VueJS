@@ -36,13 +36,13 @@ export default {
               and we hope to collaborate more with many projects to
               come.
               Wishing you all the best!`,
-          img: require("../../assets/Testimonials/ar vineet.webp")
+          img: require("../../assets/Testimonials/ar vineet.jpg")
         },
         {
           name: "Id. Sonal Yadav",
           message:
             "Kajave furniture is just “ONE STOP SHOP” for your need of premium quality solid wood furniture. Ultimate service and the personal customer touch give us the best in what we are looking for. I would 100% suggest to go for kajave furniture only!",
-          img: require("../../assets/Testimonials/sonal_yadav.webp")
+          img: require("../../assets/Testimonials/sonal_yadav.jpg")
         },
         {
           name: "Ar. Sujay Kulkarni",
@@ -52,12 +52,12 @@ export default {
             pleasure to work with the technical team in kajave industries
             for any kind of customisation in design.
             Best wishes`,
-          img: require("../../assets/Testimonials/ar_sujay.webp")
+          img: require("../../assets/Testimonials/ar_sujay.jpg")
         },
         {
           name: "Mr. Nilesh Hankare",
           message:`काजवे म्हणजे कोल्हापूर मधील एक १००% क्वालिटी, गॅॅरंटी फर्निचर देणारे दालन. मी त्यांच्याकडून माझ्या नवीन हॉटेलसाठी फर्निचर विकत घेतले. माझ्या हॉटेलला सुंदर गेटअप आला. माझ्याकडे येणाऱ्या २०० ते ३०० ग्राहकानी विचारणा केली कि हे फर्निचर कोठून घेतले आहे. सर्वाना इतके आवडले आहे. तसेच काजवे फर्निचर ऑर्डर वेळेत पूर्ण करून देतात. मला आवडले तुम्हालाही आवडेल.`,
-          img: require("../../assets/Testimonials/nilesh.webp")
+          img: require("../../assets/Testimonials/nilesh.jpg")
         },
         {
           name: "Mr. Kapil C. Bhingarde",
@@ -65,7 +65,7 @@ export default {
             collection of solid wood furniture.
             We bought dinning table chairs which are of
             unique design and very well fit and finished.`,
-          img: require("../../assets/Testimonials/kapil.webp")
+          img: require("../../assets/Testimonials/kapil.jpg")
         }
       ]
     };
@@ -160,8 +160,13 @@ export default {
         color: #9e866a;
         text-align: left;
 
+
         @include for-tablet-portrait-up {
           font-size: 16px;
+          
+        }
+
+        @include for-desktop-up{
           width: 450px;
         }
       }
