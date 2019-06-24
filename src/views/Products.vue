@@ -122,8 +122,17 @@ export default {
       }
 
       .box {
-        padding: 119px 59px 119px 70px;
+        
         position: relative;
+
+        @include for-tablet-portrait-up{
+          padding: 16px;
+          padding-top: 80px;
+        }
+
+        @include for-desktop-up{
+          padding: 119px 59px 119px 70px;    
+        }
 
         p {
           margin-top: 20px;

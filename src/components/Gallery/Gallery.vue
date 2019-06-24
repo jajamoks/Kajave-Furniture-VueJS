@@ -147,11 +147,15 @@ export default {
           height: 186px;
           object-fit: cover;
           object-position: center;
-         @include for-tablet-portrait-up{
+        
+
+        @include for-big-desktop-up{
+           @include for-tablet-portrait-up{
             width: 210px;
             height: 252px;
             
          }
+        }
         }
       }
 
