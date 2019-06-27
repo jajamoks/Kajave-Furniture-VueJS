@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p class="text-1">Solid Wooden Furniture</p>
+    <p class="text-1">Solid Wood Furniture</p>
     <Carousel/>
     <div class="dual-view">
       <div class="left" sticky-container>

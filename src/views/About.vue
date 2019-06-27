@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <p class="text-1 phone-only">Solid Wooden Furniture</p>
+    <p class="text-1 phone-only">Solid Wood Furniture</p>
 
     <div class="dual-view">
       <div class="left" sticky-container>

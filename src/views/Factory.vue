@@ -1,6 +1,6 @@
 <template>
   <div id="factory">
-    <p class="text-1">Solid Wooden Furniture</p>
+    <p class="text-1">Solid Wood Furniture</p>
     <div class="dual-view">
       <div class="left" sticky-container>
         <div class="box" v-sticky :sticky-top="80" sticky-side="top">

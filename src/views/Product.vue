@@ -1,6 +1,6 @@
 <template>
   <div id="product">
-    <p class="text-1">Solid Wooden Furniture</p>
+    <p class="text-1">Solid Wood Furniture</p>
     <div class="appbar">
       <img class="left-btn" @click="navigateBack" src="../assets/left.png" alt>
       <h1 class="p-name">{{productName}}</h1>
