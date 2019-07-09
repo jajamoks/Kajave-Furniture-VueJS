@@ -8,7 +8,7 @@
       </ul>
       <div class="info">
         <p>
-          <span style="color:#9E866A; font-weight:500">Email:</span>kajavefurniture@gmail.com
+          <span style="color:#9E866A; font-weight:500">Email:</span>kolhapur@kajavefurniture.com
         </p>
         <p>
           <span style="color:#9E866A; font-weight:500">Address:</span> 9/1/3, Lonar vasahat, Near Menon and Menon, Kolhapur, Maharashtra 416005
