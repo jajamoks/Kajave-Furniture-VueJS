@@ -4,12 +4,49 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<meta name="robots" content="index,follow"/>
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script
+		<meta name="robots" content="index,follow" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
 			async
 			src="https://www.googletagmanager.com/gtag/js?id=UA-141761310-1"
 		></script>
+		<!-- Facebook Pixel Code -->
+		<script>
+			!(function(f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function() {
+					n.callMethod
+						? n.callMethod.apply(n, arguments)
+						: n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = "2.0";
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(
+				window,
+				document,
+				"script",
+				"https://connect.facebook.net/en_US/fbevents.js"
+			);
+			fbq("init", "1127958907549342");
+			fbq("track", "PageView");
+		</script>
+		<noscript>
+			<img
+				height="1"
+				width="1"
+				src="https://www.facebook.com/tr?id=1127958907549342&ev=PageView
+	&noscript=1"
+			/>
+		</noscript>
+		<!-- End Facebook Pixel Code -->
 
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -24,7 +61,10 @@
 		</script>
 		<link rel="icon" href="<%= BASE_URL %>favicon.png" />
 		<title>Kajave Furniture</title>
-		<meta name="google-site-verification" content="xxJdavq1C20EjgHR5ykEfJcanbXGeRg7bcicY98hlJw" />
+		<meta
+			name="google-site-verification"
+			content="xxJdavq1C20EjgHR5ykEfJcanbXGeRg7bcicY98hlJw"
+		/>
 		<meta
 			name="description"
 			content="Kajave Furniture is well known to provide customized design solutions in traditional, ethnic antique, contemporary and modern styles in solid wood. With a successful beginning from initially a furniture distributor, to setting up our own factory and infrastructure to support, to manufacturing our branded furniture Kajave Furniture has taken a stride towards forwarding integrated progress."
@@ -41,7 +81,6 @@
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
-	
 	</head>
 	<body>
 		<form name="contact" method="POST" data-netlify="true" hidden>
